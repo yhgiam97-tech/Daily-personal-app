@@ -31,6 +31,12 @@ A static phone web app (PWA) served from GitHub Pages. There is no build step; c
 }
 ```
 
+## Sync between phones
+- Top 3 and lesson ticks sync through `brief-state.json` in a separate **private** repo, `yhgiam97-tech/daily-brief-sync`.
+- Each phone reads and writes it with a fine-grained token saved only on that phone, with Contents read/write on that one repo.
+- Every entry has a timestamp `t`, and the newest wins.
+- Never copy that state into this public repo.
+
 ## Rules
 - This repo is public. Never put customer names, deal details, priorities or anything personal in it.
 - Market notes are factual summaries only. No buy/sell recommendations.

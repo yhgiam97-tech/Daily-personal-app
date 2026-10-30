@@ -15,6 +15,9 @@ Things to tap:
 - **Lessons tab:** every lesson with its status. Open one to read it and mark it done.
 - **Navigation:** pull down to refresh, and use the back gesture on both iPhone and Android.
 
+## Sync
+Top 3 and lesson ticks can sync between your iPhone and Fold through a private repo. Tap **Sync** at the bottom of Today and follow the one-time steps there. Nothing personal is stored in this public repo.
+
 ## Updating it
 Ask Claude in chat, for example "here's next month's colour chart", "add MSFT to my watchlist" or "give me weeks 5–8". Claude edits the files in `data/` and pushes, and the app picks up the change the next time you open it.
 

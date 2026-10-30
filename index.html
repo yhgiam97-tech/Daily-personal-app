@@ -22,7 +22,7 @@
   <div class="navbar" id="navbar">
     <button class="nav-back" id="navBack" type="button" hidden>
       <svg viewBox="0 0 12 20" aria-hidden="true"><path d="M10 2 2 10l8 8"/></svg>
-      <span>Lessons</span>
+      <span id="navBackLabel">Lessons</span>
     </button>
     <span class="navbar-title" id="navTitle" aria-hidden="true"></span>
   </div>
@@ -115,7 +115,10 @@
 
       <footer class="foot">
         <p id="footMeta"></p>
-        <button class="foot-btn" id="refreshBtn" type="button">Refresh</button>
+        <div class="foot-row">
+          <button class="foot-btn" id="refreshBtn" type="button">Refresh</button>
+          <button class="foot-btn" id="syncLink" type="button">Sync is off</button>
+        </div>
       </footer>
     </section>
 
@@ -150,6 +153,37 @@
         <div id="weeks"></div>
       </div>
       <div class="lesson-page" id="lessonDetail" hidden></div>
+    </section>
+
+    <!-- ================= Sync ================= -->
+    <section class="view view-page" id="view-sync" aria-label="Sync" hidden>
+      <h1 class="large-title" id="syncTitle">Sync</h1>
+      <p class="page-sub">Keeps your Top 3 and lesson ticks the same on your iPhone and Fold. They're stored in a private GitHub repo that only you can see.</p>
+      <section class="module">
+        <p class="sync-state" id="syncState" role="status" aria-live="polite"></p>
+        <label class="field">
+          <span>Private repo</span>
+          <input id="syncRepo" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" inputmode="url" placeholder="owner/name">
+        </label>
+        <label class="field">
+          <span>Access token</span>
+          <input id="syncToken" type="password" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="github_pat_…">
+        </label>
+        <button class="done-btn pressable" id="syncSave" type="button">Turn on sync</button>
+        <button class="second-btn pressable" id="syncNow" type="button" hidden>Sync now</button>
+        <button class="second-btn danger pressable" id="syncOff" type="button" hidden>Turn off on this phone</button>
+      </section>
+      <section class="module">
+        <div class="module-head"><h2><span>Set up once</span></h2></div>
+        <ol class="lesson-steps setup-steps">
+          <li>On github.com, create a new <b>private</b> repo called <b>daily-brief-sync</b>.</li>
+          <li>Go to Settings, Developer settings, Personal access tokens, <b>Fine-grained tokens</b>, then Generate new token.</li>
+          <li>Under Repository access, pick <b>Only select repositories</b> and choose daily-brief-sync.</li>
+          <li>Under Permissions, set <b>Contents</b> to <b>Read and write</b>. Leave everything else as is.</li>
+          <li>Generate, copy the token, and paste it above. Do the same on your other phone with the same token.</li>
+        </ol>
+        <p class="legend-note">The token stays on this phone and can only touch that one repo. If a phone is lost, delete the token on GitHub and make a new one.</p>
+      </section>
     </section>
   </main>
 

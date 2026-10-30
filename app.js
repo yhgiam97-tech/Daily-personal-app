@@ -1,7 +1,7 @@
 /* Daily Brief v1.2. Today / Colours / Lessons, rendered from data/*.json.
    Content files are updated by Claude via git commits; priorities and lesson ticks stay on this device. */
 
-const APP_VERSION = "1.2.0";
+const APP_VERSION = "1.3.0";
 const DEFAULT_TZ = "Asia/Qatar";
 const NEUTRAL = "#3A4256";
 const PREVIEW_DAYS = 14;
@@ -222,6 +222,11 @@ function renderStatus() {
 
 /* ---------- Today: top 3 ---------- */
 const top3Key = (k) => `db.top3.${k}`;
+function saveTop3(day, items) {
+  store.set(top3Key(day), items);
+  store.set(`db.ts.top3.${day}`, Date.now());
+  scheduleSync();
+}
 const blankTop3 = () => [0, 1, 2].map(() => ({ text: "", done: false }));
 function renderTop3() {
   const today = state.today;
@@ -234,8 +239,8 @@ function renderTop3() {
     const input = el("input", { type: "text", placeholder: i === 0 ? "What matters most today?" : "Add a priority", "aria-label": `Priority ${i + 1}`, enterkeyhint: "done", maxlength: "120" });
     input.value = item.text;
     const li = el("li", { class: item.done ? "done" : "" }, tick, input);
-    tick.addEventListener("change", () => { items[i].done = tick.checked; li.classList.toggle("done", tick.checked); store.set(top3Key(today), items); haptic(); });
-    input.addEventListener("input", () => { items[i].text = input.value; store.set(top3Key(today), items); });
+    tick.addEventListener("change", () => { items[i].done = tick.checked; li.classList.toggle("done", tick.checked); saveTop3(today, items); haptic(); });
+    input.addEventListener("input", () => { items[i].text = input.value; saveTop3(today, items); });
     input.addEventListener("keydown", (e) => { if (e.key === "Enter") input.blur(); });
     list.append(li);
   });
@@ -250,12 +255,13 @@ function renderTop3() {
     carry.onclick = () => {
       let j = 0;
       for (const slot of items) if (!slot.text.trim() && j < n) { slot.text = leftovers[j++].text; slot.done = false; }
-      store.set(top3Key(today), items); store.set(`db.carryDismissed.${today}`, true); haptic(); renderTop3();
+      saveTop3(today, items); store.set(`db.carryDismissed.${today}`, true); haptic(); renderTop3();
     };
   } else carry.hidden = true;
   const cutoff = shiftKey(today, -14);
   for (const k of store.keys("db.top3.")) if (k.slice(8) < cutoff) store.remove(k);
   for (const k of store.keys("db.carryDismissed.")) if (k.slice(18) < cutoff) store.remove(k);
+  for (const k of store.keys("db.ts.top3.")) if (k.slice(11) < cutoff) store.remove(k);
 }
 
 /* ---------- Today: markets ---------- */
@@ -341,6 +347,10 @@ function toggleLesson(id) {
   const on = !d[id];
   if (on) d[id] = state.today; else delete d[id];
   store.set(LESSONS_KEY, d);
+  const ts = store.get("db.ts.lessons", {}) ?? {};
+  ts[id] = Date.now();
+  store.set("db.ts.lessons", ts);
+  scheduleSync();
   haptic();
   return on;
 }
@@ -536,6 +546,142 @@ function renderLessonDetail(animate = false) {
   if (animate) animateRing(ringEl, weekLessons, done);
 }
 
+/* ---------- sync between phones ----------
+   Top 3 and lesson ticks are kept in one JSON file in a PRIVATE GitHub repo, read and written with a
+   fine-grained token that only has Contents access to that repo. Every entry carries a timestamp and
+   the newest copy wins, so edits on either phone merge cleanly. */
+const SYNC_KEY = "db.sync";
+const SYNC_FILE = "brief-state.json";
+const syncCfg = () => store.get(SYNC_KEY, null) ?? {};
+const syncOn = () => Boolean(syncCfg().repo && syncCfg().token);
+const saveSyncCfg = (patch) => store.set(SYNC_KEY, { ...syncCfg(), ...patch });
+
+const canon = (v) => JSON.stringify(v, (k, x) => (x && typeof x === "object" && !Array.isArray(x) ? Object.fromEntries(Object.entries(x).sort()) : x));
+const b64encode = (str) => { const bytes = new TextEncoder().encode(str); let bin = ""; for (let i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode(...bytes.subarray(i, i + 0x8000)); return btoa(bin); };
+const b64decode = (b64) => new TextDecoder().decode(Uint8Array.from(atob(b64.replace(/\s/g, "")), (c) => c.charCodeAt(0)));
+
+function localDoc() {
+  const doc = { v: 1, top3: {}, lessons: {} };
+  for (const k of store.keys("db.top3.")) {
+    const day = k.slice(8);
+    doc.top3[day] = { items: store.get(k, []), t: store.get(`db.ts.top3.${day}`, 0) };
+  }
+  const done = getDone();
+  const ts = store.get("db.ts.lessons", {}) ?? {};
+  for (const id of new Set([...Object.keys(done), ...Object.keys(ts)])) doc.lessons[id] = { date: done[id] ?? null, t: ts[id] ?? 0 };
+  return doc;
+}
+function mergeDocs(a, b) {
+  const out = { v: 1, top3: { ...(a?.top3 ?? {}) }, lessons: { ...(a?.lessons ?? {}) } };
+  for (const [d, r] of Object.entries(b?.top3 ?? {})) if (!out.top3[d] || (r.t ?? 0) > (out.top3[d].t ?? 0)) out.top3[d] = r;
+  for (const [id, r] of Object.entries(b?.lessons ?? {})) if (!out.lessons[id] || (r.t ?? 0) > (out.lessons[id].t ?? 0)) out.lessons[id] = r;
+  const cutoff = shiftKey(state.today ?? dateKey(), -14);
+  for (const d of Object.keys(out.top3)) if (d < cutoff) delete out.top3[d];
+  return out;
+}
+function applyDoc(doc) {
+  for (const [d, r] of Object.entries(doc.top3)) { store.set(top3Key(d), r.items); store.set(`db.ts.top3.${d}`, r.t ?? 0); }
+  const done = {}, ts = {};
+  for (const [id, r] of Object.entries(doc.lessons)) { if (r.date) done[id] = r.date; ts[id] = r.t ?? 0; }
+  store.set(LESSONS_KEY, done);
+  store.set("db.ts.lessons", ts);
+}
+
+async function gh(method, body) {
+  const { repo, token } = syncCfg();
+  const res = await fetch(`https://api.github.com/repos/${repo}/contents/${SYNC_FILE}`, {
+    method,
+    cache: "no-store",
+    headers: { Authorization: `Bearer ${token}`, Accept: "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28", ...(body ? { "Content-Type": "application/json" } : {}) },
+    body: body ? JSON.stringify(body) : undefined,
+  });
+  return res;
+}
+const syncError = (status) => ({
+  401: "GitHub rejected the token. Make a new one and paste it again.",
+  403: "The token can't write to this repo. Give it Contents: Read and write on the sync repo.",
+  404: "Repo not found. Check the name, that it exists, and that the token can see it.",
+}[status] ?? `GitHub answered ${status}. Try again in a minute.`);
+
+let syncing = null, syncTimer = 0;
+function scheduleSync() {
+  if (!syncOn()) return;
+  clearTimeout(syncTimer);
+  syncTimer = setTimeout(() => runSync(), 1500);
+}
+async function runSync({ quiet = true } = {}) {
+  if (!syncOn() || !navigator.onLine) return;
+  if (syncing) return syncing;
+  syncing = (async () => {
+    const before = canon(localDoc());
+    try {
+      for (let attempt = 0; attempt < 2; attempt++) {
+        const got = await gh("GET");
+        let remote = null, sha;
+        if (got.ok) { const j = await got.json(); sha = j.sha; remote = JSON.parse(b64decode(j.content)); }
+        else if (got.status !== 404) throw new Error(syncError(got.status));
+        const merged = mergeDocs(localDoc(), remote);
+        applyDoc(merged);
+        if (remote && canon(merged) === canon(mergeDocs(remote, null))) break; // nothing new to send
+        const put = await gh("PUT", { message: `Sync from ${navigator.userAgent.includes("Android") ? "Android" : "iPhone"}`, content: b64encode(JSON.stringify(merged, null, 1)), ...(sha ? { sha } : {}) });
+        if (put.ok) break;
+        if ((put.status === 409 || put.status === 422) && attempt === 0) continue; // the other phone wrote first: merge again
+        if (got.status === 404 && put.status === 404) throw new Error(syncError(404));
+        throw new Error(syncError(put.status));
+      }
+      saveSyncCfg({ lastSync: Date.now(), lastError: null });
+    } catch (e) {
+      saveSyncCfg({ lastError: e.message || "Couldn't reach GitHub." });
+    } finally {
+      syncing = null;
+    }
+    if (canon(localDoc()) !== before) {
+      if (!document.activeElement?.closest?.("#top3")) renderTop3();
+      renderLesson();
+      if (state.view === "lessons") state.lesson ? renderLessonDetail() : renderLessonList();
+    }
+    renderSyncStatus();
+    if (state.view === "sync") renderSyncPage();
+  })();
+  return syncing;
+}
+
+function renderSyncStatus() {
+  const c = syncCfg();
+  const link = $("syncLink");
+  if (!link) return;
+  link.textContent = !syncOn() ? "Sync is off" : c.lastError ? "Sync needs attention" : c.lastSync ? `Synced ${fmt(new Date(c.lastSync), { hour: "2-digit", minute: "2-digit" })}` : "Sync on";
+}
+function renderSyncPage() {
+  const c = syncCfg();
+  if (!$("syncRepo").value) $("syncRepo").value = c.repo ?? "yhgiam97-tech/daily-brief-sync";
+  $("syncToken").placeholder = c.token ? "Saved on this phone" : "github_pat_…";
+  $("syncOff").hidden = !syncOn();
+  $("syncNow").hidden = !syncOn();
+  $("syncSave").textContent = syncOn() ? "Update" : "Turn on sync";
+  const st = $("syncState");
+  st.textContent = !syncOn() ? "Off. Top 3 and lesson ticks stay on this phone only."
+    : c.lastError ? c.lastError
+      : c.lastSync ? `On. Last synced ${fmt(new Date(c.lastSync), { weekday: "short", hour: "2-digit", minute: "2-digit" })}.` : "On. Syncing…";
+  st.classList.toggle("bad", Boolean(syncOn() && c.lastError));
+}
+function setupSyncPage() {
+  $("syncLink").addEventListener("click", () => go("sync"));
+  $("syncSave").addEventListener("click", async () => {
+    const repo = $("syncRepo").value.trim().replace(/^https?:\/\/github\.com\//, "").replace(/\.git$/, "").replace(/\/+$/, "");
+    const token = $("syncToken").value.trim() || syncCfg().token;
+    if (!/^[\w.-]+\/[\w.-]+$/.test(repo)) { $("syncState").textContent = "Enter the repo as owner/name, e.g. yhgiam97-tech/daily-brief-sync."; return; }
+    if (!token) { $("syncState").textContent = "Paste the access token first."; return; }
+    saveSyncCfg({ repo, token, lastError: null });
+    $("syncToken").value = "";
+    $("syncState").textContent = "Connecting…";
+    haptic();
+    await runSync({ quiet: false });
+  });
+  $("syncNow").addEventListener("click", async () => { haptic(); $("syncState").textContent = "Syncing…"; await runSync({ quiet: false }); });
+  $("syncOff").addEventListener("click", () => { store.remove(SYNC_KEY); haptic(); renderSyncPage(); renderSyncStatus(); });
+}
+
 /* ---------- navigation ---------- */
 function go(view, { lesson = null, replace = false } = {}) {
   const st = { view, lesson };
@@ -546,9 +692,9 @@ function showView(view, lesson = null) {
   const changed = view !== state.view || lesson !== state.lesson;
   state.view = view;
   state.lesson = lesson;
-  for (const v of ["today", "colours", "lessons"]) $(`view-${v}`).hidden = v !== view;
+  for (const v of ["today", "colours", "lessons", "sync"]) $(`view-${v}`).hidden = v !== view;
   document.querySelectorAll(".tab").forEach((t) => {
-    if (t.dataset.view === view) t.setAttribute("aria-current", "page"); else t.removeAttribute("aria-current");
+    if (t.dataset.view === (view === "sync" ? "today" : view)) t.setAttribute("aria-current", "page"); else t.removeAttribute("aria-current");
   });
 
   if (view === "today") { renderHero(); applySky(skyFor(state.viewDay)); }
@@ -564,8 +710,10 @@ function showView(view, lesson = null) {
     if (lesson) { renderLessonDetail(); restartAnim($("lessonDetail"), "in"); } else renderLessonList();
     applySky(skyFor(state.today));
   }
+  if (view === "sync") { renderSyncPage(); applySky(skyFor(state.today)); }
   const back = $("navBack");
-  back.hidden = !(view === "lessons" && lesson);
+  back.hidden = !((view === "lessons" && lesson) || view === "sync");
+  $("navBackLabel").textContent = view === "sync" ? "Today" : "Lessons";
   if (changed) {
     window.scrollTo({ top: 0 });
     if (!(view === "lessons" && lesson)) restartAnim($(`view-${view}`), "in");
@@ -588,10 +736,10 @@ window.addEventListener("popstate", (e) => showView(e.state?.view ?? "today", e.
 /* Compact title bar: shows once the page's big title scrolls under it. */
 function updateNavbar() {
   const bar = $("navbar");
-  const anchor = state.view === "today" ? $("dateNum") : state.view === "colours" ? $("coloursTitle") : state.lesson ? $("lessonTitle") : $("lessonsTitle");
+  const anchor = state.view === "today" ? $("dateNum") : state.view === "colours" ? $("coloursTitle") : state.view === "sync" ? $("syncTitle") : state.lesson ? $("lessonTitle") : $("lessonsTitle");
   const title = state.view === "today" ? fmtKey(state.viewDay, { weekday: "short", day: "numeric", month: "short" })
-    : state.view === "colours" ? "Colours" : state.lesson ? (flatLessons().find((l) => l.id === state.lesson)?.task ?? "Lesson") : "Lessons";
-  const pinned = state.view === "lessons" && Boolean(state.lesson);
+    : state.view === "colours" ? "Colours" : state.view === "sync" ? "Sync" : state.lesson ? (flatLessons().find((l) => l.id === state.lesson)?.task ?? "Lesson") : "Lessons";
+  const pinned = (state.view === "lessons" && Boolean(state.lesson)) || state.view === "sync";
   const scrolledPast = anchor ? anchor.getBoundingClientRect().bottom < bar.offsetHeight + 4 : false;
   const twoPane = state.view === "today" && matchMedia("(min-width: 680px)").matches;
   bar.classList.toggle("show", !twoPane && (pinned || scrolledPast));
@@ -667,15 +815,17 @@ async function refresh() {
   await loadAll();
   $("legend").replaceChildren();
   renderAll();
+  runSync();
   btn.disabled = false; btn.textContent = "Refresh";
 }
 $("refreshBtn").addEventListener("click", refresh);
 document.addEventListener("visibilitychange", () => {
   if (document.visibilityState !== "visible") return;
   const old = !state.loadedAt || Date.now() - state.loadedAt.getTime() > 30 * 60e3;
-  if (old || dateKey() !== state.today) refresh();
+  if (old || dateKey() !== state.today) refresh(); else runSync();
 });
 window.addEventListener("online", refresh);
+window.addEventListener("pagehide", () => { if (syncTimer) { clearTimeout(syncTimer); runSync(); } });
 window.addEventListener("offline", () => { state.offline = true; renderStatus(); });
 
 syncToday();
@@ -683,6 +833,8 @@ history.replaceState({ view: "today", lesson: null }, "");
 renderHero();
 setupHeroSwipe();
 setupPullToRefresh();
+setupSyncPage();
+renderSyncStatus();
 const reveal = () => requestAnimationFrame(() => document.body.classList.add("ready"));
 const fallback = setTimeout(reveal, 1200);
 refresh().then(() => { clearTimeout(fallback); reveal(); });

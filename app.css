@@ -531,7 +531,30 @@ button.chip[aria-pressed="true"] { transform: scale(1.12); box-shadow: 0 0 0 2.5
 .lesson-page .large-title { font-size: 28px; }
 .lesson-page .lesson-where { padding: 0 4px 6px; font-size: 15px; }
 
+/* ---------- Sync page ---------- */
+.sync-state { padding: 4px 0 8px; font-size: 15px; line-height: 1.4; color: var(--label-2); }
+.sync-state.bad { color: var(--label); font-weight: 600; }
+.field { display: block; padding: 10px 0; border-top: .5px solid var(--sep); }
+.field span { display: block; font-size: 13px; color: var(--label-2); }
+.field input {
+  width: 100%;
+  margin-top: 4px;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--fill);
+  color: var(--label);
+  font: inherit;
+  font-size: 17px;
+}
+.field input::placeholder { color: var(--label-3); }
+.field input:focus { outline: 2px solid var(--label-3); outline-offset: 0; }
+.second-btn.danger { color: var(--pill-down); background: var(--fill); }
+:root[data-tone="dark"] .second-btn.danger { color: #FF6961; }
+.setup-steps b { font-weight: 600; }
+
 /* ---------- Footer ---------- */
+.foot-row { display: flex; justify-content: center; gap: 4px; }
 .foot { margin-top: 20px; text-align: center; font-size: 12px; color: var(--label-3); }
 .foot-btn { margin-top: 6px; padding: 8px 14px; font-size: 15px; font-weight: 600; color: var(--label-2); }
 
