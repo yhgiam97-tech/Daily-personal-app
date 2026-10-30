@@ -3,7 +3,17 @@
 A static phone web app (PWA) served from GitHub Pages. There is no build step; content lives in `data/*.json`, and the app reads it on open.
 
 ## Data files
-- `data/colors.json`: `{ "source": "...", "days": { "YYYY-MM-DD": { "color": "Name", "hex": "#RRGGBB", "note": "" } } }`. Dates are Doha time. Copy the user's chart exactly, and never invent a day that isn't on it.
+- `data/colors.json`: Eric's 衣服颜色 chart, by day star (当天日星).
+  - `days`: `{ "YYYY-MM-DD": star }`, where star is 1–9 (Doha dates).
+  - `stars`: maps each star to its element and three palette keys in order of preference.
+  - `palettes`: English and Chinese names, a backdrop `hex`, and colour `chips`.
+  - Transcribe stars exactly as handwritten. The chart has deliberate jumps (e.g. Dec 16, Dec 22), so never "fix" the sequence and never invent a day that isn't on the chart.
+  - The legend (top right of the chart) defines the choices:
+    - 9 fire: earth, fire, metal
+    - 2/5/8 earth: metal, earth, water
+    - 6/7 metal: water, metal, wood
+    - 3/4 wood: fire, wood, earth
+    - 1 water: wood, water, fire
 - `data/market.json`: the US market brief (shape below). Rewritten by the morning refresh.
 - `data/curriculum.json`: `{ weeks: [{ title, days: [{ task, why, steps[], minutes, link?, linkLabel? }] }] }`. Progress is tracked on the device by position (`w{week}-d{day}`), so append new weeks rather than reordering existing ones.
 - `data/config.json`: time zone, watchlist tickers, minutes per day.
@@ -26,4 +36,5 @@ A static phone web app (PWA) served from GitHub Pages. There is no build step; c
 - Market notes are factual summaries only. No buy/sell recommendations.
 - Cross-check index levels against at least two sources. If sources disagree, use the one that matches the majority and note nothing you can't support.
 - Validate every JSON file before committing (`python3 -m json.tool <file>`).
-- When the shell changes (`index.html`, `app.css`, `app.js`, fonts, icons), bump `VERSION` in `sw.js` and `APP_VERSION` in `app.js` so phones pick up the update.
+- Look and motion follow Apple's design language: system font, glass modules over the day's colour, iOS spring curves. Keep `prefers-reduced-motion` support intact.
+- When the shell changes (`index.html`, `app.css`, `app.js`, icons), bump `VERSION` in `sw.js` and `APP_VERSION` in `app.js` so phones pick up the update.

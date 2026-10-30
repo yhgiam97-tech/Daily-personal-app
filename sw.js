@@ -1,7 +1,7 @@
 /* Daily Brief service worker.
-   Shell (incl. fonts, icons): stale-while-revalidate. Data: network first, cached copy when offline. */
+   Shell (incl. icons): stale-while-revalidate. Data: network first, cached copy when offline. */
 
-const VERSION = "1.0.0";
+const VERSION = "1.1.0";
 const SHELL_CACHE = `brief-shell-${VERSION}`;
 const DATA_CACHE = "brief-data";
 const SHELL = [
@@ -10,8 +10,6 @@ const SHELL = [
   "app.css",
   "app.js",
   "manifest.webmanifest",
-  "fonts/big-shoulders-display.woff",
-  "fonts/ibm-plex-sans.woff",
   "icons/icon-192.png",
   "icons/icon-512.png",
   "icons/apple-touch-icon.png",
