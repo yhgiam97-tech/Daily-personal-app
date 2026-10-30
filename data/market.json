@@ -1,51 +1,51 @@
 {
-  "asOf": "2026-10-30T20:45:00+03:00",
-  "session": "Thu 29 Oct close",
+  "asOf": "2026-10-31T01:50:00+03:00",
+  "session": "Fri 30 Oct close",
   "indices": [
     {
       "name": "S&P 500",
-      "level": 7720.39,
-      "changePct": -0.3,
+      "level": 7580.07,
+      "changePct": -1.82,
       "symbol": "^GSPC",
-      "note": "Ended a three-day winning streak even though most S&P 500 stocks rose; big tech did the damage."
+      "note": "Second straight drop as tech dragged; the index ended October down about 1.2%."
     },
     {
       "name": "Nasdaq",
-      "level": 26184.72,
-      "changePct": -1.38,
+      "level": 25437.0,
+      "changePct": -2.86,
       "symbol": "^IXIC",
-      "note": "Led the drop as Alphabet fell about 12% and software names sold off."
+      "note": "Hit hardest as Intel, Reddit and Alphabet sold off; down about 5% for October, its worst month since March 2025."
     },
     {
       "name": "Dow",
-      "level": 52342.56,
-      "changePct": -0.25,
+      "level": 51770.31,
+      "changePct": -1.09,
       "symbol": "^DJI",
-      "note": "Caterpillar's fall of more than 9% weighed on the Dow."
+      "note": "Fell less than the others and still finished October up about 1.5%."
     }
   ],
   "watchlist": [],
   "notes": [
-    "Alphabet fell about 12% after missing profit estimates, reviving worries that AI spending won't pay off. Tech pulled the Nasdaq down even though most S&P 500 stocks rose.",
-    "Software was hit hardest: ServiceNow dropped more than 25% and Fortinet about 21%. Eli Lilly and DoorDash, which agreed to buy Instacart, gained.",
-    "After the bell, Amazon slid about 7% and Intel about 23% on a weak PC outlook, pointing to a soft start for Friday's session."
+    "Intel plunged about 29%, its worst day since 1974, after a weak holiday-quarter forecast. Together with Amazon's and Alphabet's results, it deepened doubts that heavy AI spending will pay off soon.",
+    "Reddit also fell about 29% on a softer outlook and Roblox dropped sharply, while Regeneron jumped about 13% and Exxon and Chevron briefly touched record highs.",
+    "Oil rose on renewed US–Iran tension, with WTI near $104, and talk of a possible Fed rate hike in December added pressure."
   ],
   "events": [
-    "Fri 30 Oct: ExxonMobil and AbbVie earnings before the open; Q3 Employment Cost Index at 15:30 Doha time.",
-    "Next week: US midterm elections. The Fed held rates this week; the next decision is in December."
+    "Tue 3 Nov: US midterm elections. Markets are watching for any renewed US strikes on Iran afterwards.",
+    "Fed officials are signalling a possible rate hike; the next decision is in December."
   ],
   "sources": [
     {
-      "title": "Capp Notes closing look",
-      "url": "https://cappnotes.substack.com/p/closing-look-thursday-october-29"
+      "title": "Yahoo Finance live, 30 Oct",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-amazon-intel-ai-sell-off-191429143.html"
     },
     {
-      "title": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nasdaq-futures-104943461.html"
+      "title": "TheStreet, 30 Oct",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026"
     },
     {
-      "title": "StockTitan",
-      "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-29-2026"
+      "title": "24/7 Wall St. closing bell",
+      "url": "https://247wallst.com/cards/the-nasdaq-s-2-86-drop-was-more-than-double-the-dow-s-decli-gspc-market-bell-01m676j9fvbar2t12035t2hhqp"
     }
   ]
 }
