@@ -26,14 +26,14 @@ A static phone web app (PWA) served from GitHub Pages. There is no build step; c
   "indices": [{ "name": "S&P 500", "level": 0, "changePct": 0 }],
   "watchlist": [{ "ticker": "NVDA", "name": "Nvidia", "price": 0, "changePct": 0 }],
   "notes": ["three plain-language bullets on what moved and why"],
-  "events": ["what's scheduled next, in Doha time"],
+  "events": ["what's scheduled next, in Kuwait time (UTC+3)"],
   "sources": [{ "title": "...", "url": "https://..." }]
 }
 ```
 
 ## Market refresh (scheduled task)
 - Runs after each US close, Mon–Fri.
-- Each run rewrites `data/market.json` only: index closes, the watchlist from `data/config.json`, three "what moved" notes, events in Doha time, and sources.
+- Each run rewrites `data/market.json` only: index closes, the watchlist from `data/config.json`, three "what moved" notes, events in Kuwait time (UTC+3), and sources.
 - Commit message: `Market brief: <session>`.
 - If figures can't be confirmed from two sources, leave the file unchanged and say why.
 

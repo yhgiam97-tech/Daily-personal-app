@@ -2,7 +2,7 @@
    Content files are updated by Claude via git commits; priorities and lesson ticks stay on this device. */
 
 const APP_VERSION = "1.3.1";
-const DEFAULT_TZ = (() => { try { return Intl.DateTimeFormat().resolvedOptions().timeZone || "Asia/Qatar"; } catch { return "Asia/Qatar"; } })();
+const DEFAULT_TZ = (() => { try { return Intl.DateTimeFormat().resolvedOptions().timeZone || "Asia/Kuwait"; } catch { return "Asia/Kuwait"; } })();
 const NEUTRAL = "#3A4256";
 const PREVIEW_DAYS = 14;
 
