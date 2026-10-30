@@ -1,8 +1,8 @@
 /* Daily Brief v1.2. Today / Colours / Lessons, rendered from data/*.json.
    Content files are updated by Claude via git commits; priorities and lesson ticks stay on this device. */
 
-const APP_VERSION = "1.3.0";
-const DEFAULT_TZ = "Asia/Qatar";
+const APP_VERSION = "1.3.1";
+const DEFAULT_TZ = (() => { try { return Intl.DateTimeFormat().resolvedOptions().timeZone || "Asia/Qatar"; } catch { return "Asia/Qatar"; } })();
 const NEUTRAL = "#3A4256";
 const PREVIEW_DAYS = 14;
 
@@ -98,7 +98,8 @@ async function loadAll() {
   results.forEach((r, i) => { if (r.status === "fulfilled") state.data[names[i]] = r.value; else state.failed.push(names[i]); });
   state.offline = !navigator.onLine;
   state.loadedAt = new Date();
-  if (state.data.config?.tz) TZ = state.data.config.tz;
+  const tz = state.data.config?.tz;
+  TZ = tz && tz !== "auto" ? tz : DEFAULT_TZ; // "auto" = follow the phone, so travel days stay right
 }
 
 function colourFor(key) {
@@ -296,12 +297,14 @@ function renderMarket() {
   box.replaceChildren();
   $("mktAsOf").textContent = "";
   if (!m || !Array.isArray(m.indices) || !m.indices.length) {
-    box.append(el("p", { class: "empty", text: state.failed.includes("market") ? "The market brief didn't load. Pull down to refresh." : "No market brief yet. It refreshes every morning around 7:00." }));
+    box.append(el("p", { class: "empty", text: state.failed.includes("market") ? "The market brief didn't load. Pull down to refresh." : "No market brief yet. It refreshes after each US market close." }));
     return;
   }
   const asOf = m.asOf ? new Date(m.asOf) : null;
   const valid = asOf && !Number.isNaN(asOf.getTime());
-  const stale = valid && Date.now() - asOf.getTime() > 36 * 3600e3;
+  const dowUTC = new Date().getUTCDay();             // no US session Sat/Sun, so allow the weekend gap
+  const allowH = dowUTC === 0 || dowUTC === 1 || dowUTC === 6 ? 84 : 36;
+  const stale = valid && Date.now() - asOf.getTime() > allowH * 3600e3;
   $("mktAsOf").textContent = stale ? "Not updated today" : (m.session || "");
 
   const idx = el("div");

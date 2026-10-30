@@ -1,7 +1,7 @@
 /* Daily Brief service worker.
    Shell (incl. icons): stale-while-revalidate. Data: network first, cached copy when offline. */
 
-const VERSION = "1.3.0";
+const VERSION = "1.3.1";
 const SHELL_CACHE = `brief-shell-${VERSION}`;
 const DATA_CACHE = "brief-data";
 const SHELL = [

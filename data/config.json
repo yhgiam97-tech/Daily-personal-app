@@ -1,5 +1,5 @@
 {
-  "tz": "Asia/Qatar",
+  "tz": "auto",
   "watchlist": [],
   "minutesPerDay": 25,
   "startDate": "2026-10-31"

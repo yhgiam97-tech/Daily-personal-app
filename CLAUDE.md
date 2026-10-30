@@ -3,8 +3,8 @@
 A static phone web app (PWA) served from GitHub Pages. There is no build step; content lives in `data/*.json`, and the app reads it on open.
 
 ## Data files
-- `data/colors.json`: Eric's 衣服颜色 chart, by day star (当天日星).
-  - `days`: `{ "YYYY-MM-DD": star }`, where star is 1–9 (Doha dates).
+- `data/colors.json`: the user's 衣服颜色 chart, by day star (当天日星).
+  - `days`: `{ "YYYY-MM-DD": star }`, where star is 1–9 (calendar dates; the app reads them in the phone's own time zone).
   - `stars`: maps each star to its element and three palette keys in order of preference.
   - `palettes`: English and Chinese names, a backdrop `hex`, and colour `chips`.
   - Transcribe stars exactly as handwritten. The chart has deliberate jumps (e.g. Dec 16, Dec 22), so never "fix" the sequence and never invent a day that isn't on the chart.
@@ -30,6 +30,12 @@ A static phone web app (PWA) served from GitHub Pages. There is no build step; c
   "sources": [{ "title": "...", "url": "https://..." }]
 }
 ```
+
+## Market refresh (scheduled task)
+- Runs after each US close, Mon–Fri.
+- Each run rewrites `data/market.json` only: index closes, the watchlist from `data/config.json`, three "what moved" notes, events in Doha time, and sources.
+- Commit message: `Market brief: <session>`.
+- If figures can't be confirmed from two sources, leave the file unchanged and say why.
 
 ## Sync between phones
 - Top 3 and lesson ticks sync through `brief-state.json` in a separate **private** repo, `yhgiam97-tech/daily-brief-sync`.
