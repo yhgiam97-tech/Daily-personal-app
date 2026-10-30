@@ -1,0 +1,24 @@
+{
+  "asOf": "2026-10-30T20:45:00+03:00",
+  "session": "Thu 29 Oct close",
+  "indices": [
+    { "name": "S&P 500", "level": 7720.39, "changePct": -0.30 },
+    { "name": "Nasdaq", "level": 26184.72, "changePct": -1.38 },
+    { "name": "Dow", "level": 52342.56, "changePct": -0.25 }
+  ],
+  "watchlist": [],
+  "notes": [
+    "Alphabet fell about 12% after missing profit estimates, reviving worries that AI spending won't pay off. Tech pulled the Nasdaq down even though most S&P 500 stocks rose.",
+    "Software was hit hardest: ServiceNow dropped more than 25% and Fortinet about 21%. Eli Lilly and DoorDash, which agreed to buy Instacart, gained.",
+    "After the bell, Amazon slid about 7% and Intel about 23% on a weak PC outlook, pointing to a soft start for Friday's session."
+  ],
+  "events": [
+    "Fri 30 Oct: ExxonMobil and AbbVie earnings before the open; Q3 Employment Cost Index at 15:30 Doha time.",
+    "Next week: US midterm elections. The Fed held rates this week; the next decision is in December."
+  ],
+  "sources": [
+    { "title": "Capp Notes closing look", "url": "https://cappnotes.substack.com/p/closing-look-thursday-october-29" },
+    { "title": "Yahoo Finance", "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nasdaq-futures-104943461.html" },
+    { "title": "StockTitan", "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-29-2026" }
+  ]
+}

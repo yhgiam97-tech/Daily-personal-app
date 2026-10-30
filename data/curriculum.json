@@ -1,0 +1,228 @@
+{
+  "title": "AI & automation for presales",
+  "updated": "2026-10-30",
+  "weeks": [
+    {
+      "title": "Prompting foundations",
+      "days": [
+        {
+          "task": "Rewrite one vague request into a full brief",
+          "why": "Specific context (audience, goal, length, format) is the single biggest lever on output quality.",
+          "steps": [
+            "Pick a real request you made this week, like \"help me with this deck\".",
+            "Rewrite it: who it's for, what decision it supports, length, format, what to avoid.",
+            "Run both versions and note three differences in the answers."
+          ],
+          "minutes": 25,
+          "link": "https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview",
+          "linkLabel": "Prompt engineering overview"
+        },
+        {
+          "task": "Teach Claude your house style with one example",
+          "why": "An example of output you liked transfers tone and structure faster than any description.",
+          "steps": [
+            "Paste a past email or proposal section you're proud of.",
+            "Ask for a new one on a different topic in the same style.",
+            "Note what carried over and what didn't."
+          ],
+          "minutes": 20
+        },
+        {
+          "task": "Make Claude reason before it answers",
+          "why": "Asking for step-by-step reasoning and stated assumptions catches errors in scope and pricing logic.",
+          "steps": [
+            "Pick a trade-off you're weighing, such as two solution options or two commercial models.",
+            "Ask Claude to think it through step by step, then list every assumption it made.",
+            "Challenge the weakest assumption and see how the answer changes."
+          ],
+          "minutes": 25
+        },
+        {
+          "task": "Replace \"make it better\" with three precise edits",
+          "why": "Targeted revision requests converge in one round instead of five.",
+          "steps": [
+            "Take any draft Claude wrote for you.",
+            "Give exactly three changes: tone, one thing to add, one thing to cut.",
+            "Compare against a plain \"improve this\" request."
+          ],
+          "minutes": 20
+        },
+        {
+          "task": "Rehearse a tough customer meeting with role-play",
+          "why": "Having Claude play a sceptical CTO surfaces objections before the real meeting does.",
+          "steps": [
+            "Describe the proposal and the customer's priorities, with no confidential names.",
+            "Ask Claude to play the CTO and raise its three hardest objections.",
+            "Draft your answers, then ask it to rate them as the CTO."
+          ],
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "title": "Claude workflows",
+      "days": [
+        {
+          "task": "Set up a project for one recurring workstream",
+          "why": "Projects keep reference docs and instructions in one place, so you stop re-explaining context.",
+          "steps": [
+            "Create a project for one ongoing bid or account.",
+            "Add two or three reference documents and short custom instructions.",
+            "Ask one question that needs those documents to answer."
+          ],
+          "minutes": 25
+        },
+        {
+          "task": "Interrogate a long document with citations",
+          "why": "Requiring section or clause references makes answers checkable, which matters for contracts and RFPs.",
+          "steps": [
+            "Attach an RFP, SOW or contract.",
+            "Ask five questions and require a section or clause number for each answer.",
+            "Spot-check two citations against the document."
+          ],
+          "minutes": 25
+        },
+        {
+          "task": "Turn an RFP section into a compliance matrix",
+          "why": "Structured output (tables with fixed columns) turns reading time into a usable work product.",
+          "steps": [
+            "Pick one RFP section.",
+            "Ask for a table: requirement, compliance status, response summary, owner.",
+            "Ask Claude to flag any requirement it was unsure how to classify."
+          ],
+          "minutes": 30
+        },
+        {
+          "task": "Build an English–Chinese terminology glossary",
+          "why": "A shared glossary keeps customer-facing English and internal Chinese material consistent.",
+          "steps": [
+            "Draft a short English summary of a solution.",
+            "Ask for the Chinese version plus a glossary of every technical term used.",
+            "Save the glossary and reuse it in your next bilingual task."
+          ],
+          "minutes": 20
+        },
+        {
+          "task": "Start your personal prompt library",
+          "why": "Five prompts you trust are worth more than fifty you half-remember.",
+          "steps": [
+            "Look back over this fortnight's best prompts.",
+            "Save five as reusable templates, with blanks for the parts that change.",
+            "Name each one by the job it does."
+          ],
+          "minutes": 20
+        }
+      ]
+    },
+    {
+      "title": "Automation",
+      "days": [
+        {
+          "task": "Write your first skill for a task you repeat",
+          "why": "A skill packages instructions Claude follows every time, like a checklist it never forgets.",
+          "steps": [
+            "Pick a task you do weekly, such as a proposal QA pass.",
+            "Write the steps and quality bar as if briefing a new colleague.",
+            "Ask Claude to turn that into a skill and test it on one real file."
+          ],
+          "minutes": 30
+        },
+        {
+          "task": "Let a connector do the reading for you",
+          "why": "Connected apps let Claude pull context from mail or notes instead of you pasting it.",
+          "steps": [
+            "Connect one app you use daily, like Gmail or Notion.",
+            "Ask for a summary of this week's threads on one topic, with what's waiting on you.",
+            "Check one item against the source."
+          ],
+          "minutes": 20
+        },
+        {
+          "task": "Schedule a weekly digest",
+          "why": "Scheduled tasks turn a good prompt into something that runs without you remembering it.",
+          "steps": [
+            "Choose a weekly summary you'd actually read.",
+            "Ask Claude to set it up as a scheduled task.",
+            "Review the first run and tighten the prompt."
+          ],
+          "minutes": 25
+        },
+        {
+          "task": "Have Claude build a checking spreadsheet",
+          "why": "Formulas that cross-check totals and quantities catch the errors that slip through manual review.",
+          "steps": [
+            "Describe a pricing sheet or bill of quantities you maintain.",
+            "Ask for an .xlsx with check formulas: totals tie out, no blank unit prices, margins in range.",
+            "Break one value on purpose and confirm a check catches it."
+          ],
+          "minutes": 30
+        },
+        {
+          "task": "Spec one chore for full automation",
+          "why": "Writing the spec first (inputs, steps, output, checks) is what makes an automation reliable.",
+          "steps": [
+            "Pick the presales chore that eats the most of your week.",
+            "Write: trigger, inputs, steps, output, how you'd know it's right.",
+            "Ask Claude what's missing from the spec."
+          ],
+          "minutes": 25
+        }
+      ]
+    },
+    {
+      "title": "Build",
+      "days": [
+        {
+          "task": "Study this app's morning refresh as a case study",
+          "why": "It's a full loop: a scheduled prompt, web research, a data file, and an app that reads it.",
+          "steps": [
+            "Ask Claude to show you the scheduled task prompt and data/market.json.",
+            "Trace how a number gets from a web source to your screen.",
+            "Suggest one improvement and have Claude make it."
+          ],
+          "minutes": 20
+        },
+        {
+          "task": "Write a script that QA-checks a slide deck",
+          "why": "Programmatic checks find leftover placeholders, wrong fonts and missing page numbers in seconds.",
+          "steps": [
+            "Give Claude a sample .pptx and list five things you always check.",
+            "Have it write a Python script that reports each issue by slide.",
+            "Run it on a real deck and review the report."
+          ],
+          "minutes": 30
+        },
+        {
+          "task": "Turn the script into a reusable tool",
+          "why": "A tool you can hand any deck to is worth more than a one-off script.",
+          "steps": [
+            "Ask Claude to package the checker as a skill or small command.",
+            "Add a clear pass/fail summary at the top of its output.",
+            "Test it on two different decks."
+          ],
+          "minutes": 25
+        },
+        {
+          "task": "Run a multi-step task with research, draft and review",
+          "why": "Splitting work into stages, with a separate check at the end, is the core pattern behind agents.",
+          "steps": [
+            "Pick a market or technology question for a customer brief.",
+            "Ask Claude to research it, draft a one-page brief, then review its own draft against the sources.",
+            "Compare the reviewed version with the first draft."
+          ],
+          "minutes": 30
+        },
+        {
+          "task": "Ship it and plan what's next",
+          "why": "Showing a colleague what you built makes the learning stick and surfaces the next idea.",
+          "steps": [
+            "Demo your deck checker or automation to one colleague.",
+            "Write down what they'd want it to do next.",
+            "Tell Claude, and ask for your next four weeks of lessons."
+          ],
+          "minutes": 20
+        }
+      ]
+    }
+  ]
+}
