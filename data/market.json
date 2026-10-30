@@ -2,9 +2,27 @@
   "asOf": "2026-10-30T20:45:00+03:00",
   "session": "Thu 29 Oct close",
   "indices": [
-    { "name": "S&P 500", "level": 7720.39, "changePct": -0.30 },
-    { "name": "Nasdaq", "level": 26184.72, "changePct": -1.38 },
-    { "name": "Dow", "level": 52342.56, "changePct": -0.25 }
+    {
+      "name": "S&P 500",
+      "level": 7720.39,
+      "changePct": -0.3,
+      "symbol": "^GSPC",
+      "note": "Ended a three-day winning streak even though most S&P 500 stocks rose; big tech did the damage."
+    },
+    {
+      "name": "Nasdaq",
+      "level": 26184.72,
+      "changePct": -1.38,
+      "symbol": "^IXIC",
+      "note": "Led the drop as Alphabet fell about 12% and software names sold off."
+    },
+    {
+      "name": "Dow",
+      "level": 52342.56,
+      "changePct": -0.25,
+      "symbol": "^DJI",
+      "note": "Caterpillar's fall of more than 9% weighed on the Dow."
+    }
   ],
   "watchlist": [],
   "notes": [
@@ -17,8 +35,17 @@
     "Next week: US midterm elections. The Fed held rates this week; the next decision is in December."
   ],
   "sources": [
-    { "title": "Capp Notes closing look", "url": "https://cappnotes.substack.com/p/closing-look-thursday-october-29" },
-    { "title": "Yahoo Finance", "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nasdaq-futures-104943461.html" },
-    { "title": "StockTitan", "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-29-2026" }
+    {
+      "title": "Capp Notes closing look",
+      "url": "https://cappnotes.substack.com/p/closing-look-thursday-october-29"
+    },
+    {
+      "title": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nasdaq-futures-104943461.html"
+    },
+    {
+      "title": "StockTitan",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-29-2026"
+    }
   ]
 }
