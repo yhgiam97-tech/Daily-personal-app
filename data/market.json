@@ -1,51 +1,51 @@
 {
-  "asOf": "2026-11-03T01:45:00+03:00",
-  "session": "Mon 2 Nov close",
+  "asOf": "2026-11-04T01:45:00+03:00",
+  "session": "Tue 3 Nov close",
   "indices": [
     {
       "name": "S&P 500",
-      "level": 7541.40,
-      "changePct": -0.51,
+      "level": 7568.92,
+      "changePct": 0.36,
       "symbol": "^GSPC",
-      "note": "Third straight loss as chip stocks slid again in the afternoon."
+      "note": "Ended a three-day losing streak as chipmakers bounced back."
     },
     {
       "name": "Nasdaq",
-      "level": 25164.32,
-      "changePct": -1.07,
+      "level": 25372.01,
+      "changePct": 0.83,
       "symbol": "^IXIC",
-      "note": "Led the decline as investors kept moving money out of tech."
+      "note": "Led the gains on a rebound in AI and semiconductor stocks."
     },
     {
       "name": "Dow",
-      "level": 51983.98,
-      "changePct": 0.41,
+      "level": 51786.72,
+      "changePct": -0.38,
       "symbol": "^DJI",
-      "note": "Rose as money shifted into consumer, financial and home-improvement names."
+      "note": "Slipped as Apple and Sherwin-Williams fell, despite a strong day for Microsoft."
     }
   ],
   "watchlist": [],
   "notes": [
-    "The tech sell-off continued: Marvell fell about 13% after agreeing to buy Lumentum in an all-stock deal, Lumentum dropped about 19%, and Oracle lost around 9% after announcing a large stock and bond raise.",
-    "Oil tumbled about 7–8% on reports that the US and Iran are seeking a diplomatic way out, with WTI near $96 and Brent just under $105.",
-    "The Dow held up on gains in names like Home Depot and Sherwin-Williams, IDEXX jumped about 22% on strong results, and the ISM manufacturing survey came in better than expected."
+    "Chip stocks recovered after Monday's sell-off: Nvidia rose about 2%, AMD about 4% ahead of its results, and Microsoft gained close to 3%.",
+    "Apple dropped about 2% on worries about slower services growth and thinner margins, and Palantir fell despite beating forecasts as investors focused on slower US commercial bookings.",
+    "Eaton jumped about 7% on strong results tied to data-centre power demand; oil was roughly flat with WTI near $96.5, and the 10-year Treasury yield rose to about 4.96%."
   ],
   "events": [
-    "Tue 3 Nov: US midterm elections; AMD reports after the US close (early Wed in Kuwait).",
+    "Wed 4 Nov: US midterm election results come in through the Kuwait morning; markets react to AMD's after-hours results.",
     "Fri 6 Nov, 16:30 Kuwait time: US October jobs report."
   ],
   "sources": [
     {
-      "title": "Yahoo Finance live, 2 Nov",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-2-dow-sp-500-nasdaq-091835095.html"
+      "title": "Yahoo Finance live, 3 Nov",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-3-dow-sp-500-nasdaq-midterms-amd-earnings-141143244.html"
     },
     {
-      "title": "STL.News, 2 Nov",
-      "url": "https://www.stl.news/stock-market-today-monday-november-2-2026/"
+      "title": "Kiplinger market wrap, 3 Nov",
+      "url": "https://www.kiplinger.com/investing/stocks/nasdaq-bounces-as-chips-lead-ai-revival-stock-market-today"
     },
     {
-      "title": "StockTitan market wrap, 2 Nov",
-      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-2-2026"
+      "title": "EconCurrents market close, 3 Nov",
+      "url": "https://econcurrents.substack.com/p/03-november-2026-market-close-and"
     }
   ]
 }
