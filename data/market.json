@@ -1,51 +1,51 @@
 {
-  "asOf": "2026-11-04T01:45:00+03:00",
-  "session": "Tue 3 Nov close",
+  "asOf": "2026-11-05T01:42:00+03:00",
+  "session": "Wed 4 Nov close",
   "indices": [
     {
       "name": "S&P 500",
-      "level": 7568.92,
-      "changePct": 0.36,
+      "level": 7688.62,
+      "changePct": 1.58,
       "symbol": "^GSPC",
-      "note": "Ended a three-day losing streak as chipmakers bounced back."
+      "note": "Rose broadly as midterm results removed a major source of uncertainty."
     },
     {
       "name": "Nasdaq",
-      "level": 25372.01,
-      "changePct": 0.83,
+      "level": 25736.51,
+      "changePct": 1.44,
       "symbol": "^IXIC",
-      "note": "Led the gains on a rebound in AI and semiconductor stocks."
+      "note": "Big cloud names rallied, though memory and chip stocks fell sharply."
     },
     {
       "name": "Dow",
-      "level": 51786.72,
-      "changePct": -0.38,
+      "level": 53356.12,
+      "changePct": 3.03,
       "symbol": "^DJI",
-      "note": "Slipped as Apple and Sherwin-Williams fell, despite a strong day for Microsoft."
+      "note": "Jumped about 1,569 points, its strongest post-midterm day in decades."
     }
   ],
   "watchlist": [],
   "notes": [
-    "Chip stocks recovered after Monday's sell-off: Nvidia rose about 2%, AMD about 4% ahead of its results, and Microsoft gained close to 3%.",
-    "Apple dropped about 2% on worries about slower services growth and thinner margins, and Palantir fell despite beating forecasts as investors focused on slower US commercial bookings.",
-    "Eaton jumped about 7% on strong results tied to data-centre power demand; oil was roughly flat with WTI near $96.5, and the 10-year Treasury yield rose to about 4.96%."
+    "Democrats won control of both the House and Senate; investors read a divided government as lowering the odds of big policy shifts, and stocks recovered from an early dip into a broad rally.",
+    "Large cloud providers led tech: Microsoft and Amazon each rose about 6–7% and Alphabet gained 3–4%, while memory makers such as Micron, Seagate and SanDisk fell 7–8% and the chip index lost about 3%.",
+    "Oil slumped, with WTI down roughly 8% to about $88 on the election outcome and signs of diplomacy with Iran, hitting energy stocks; the 10-year Treasury yield eased to about 4.89% and gold rose about 3%."
   ],
   "events": [
-    "Wed 4 Nov: US midterm election results come in through the Kuwait morning; markets react to AMD's after-hours results.",
+    "Thu 5 Nov: counting continues in uncalled House races and the Alaska and Mississippi Senate contests.",
     "Fri 6 Nov, 16:30 Kuwait time: US October jobs report."
   ],
   "sources": [
     {
-      "title": "Yahoo Finance live, 3 Nov",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-3-dow-sp-500-nasdaq-midterms-amd-earnings-141143244.html"
+      "title": "Yahoo Finance market close, 4 Nov",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-4-221001197.html"
     },
     {
-      "title": "Kiplinger market wrap, 3 Nov",
-      "url": "https://www.kiplinger.com/investing/stocks/nasdaq-bounces-as-chips-lead-ai-revival-stock-market-today"
+      "title": "TheStreet market live, 4 Nov",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026"
     },
     {
-      "title": "EconCurrents market close, 3 Nov",
-      "url": "https://econcurrents.substack.com/p/03-november-2026-market-close-and"
+      "title": "TradingKey US stocks close, 4 Nov",
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262275848-us-stocks-close-dow-surges-1500-points-hyperscalers-amazon-ai-infrastructure-tradingkey"
     }
   ]
 }
