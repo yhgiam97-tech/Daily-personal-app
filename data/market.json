@@ -1,51 +1,52 @@
 {
-  "asOf": "2026-11-05T01:42:00+03:00",
-  "session": "Wed 4 Nov close",
+  "asOf": "2026-11-06T01:42:00+03:00",
+  "session": "Thu 5 Nov close",
   "indices": [
     {
       "name": "S&P 500",
-      "level": 7688.62,
-      "changePct": 1.58,
+      "level": 7353.73,
+      "changePct": -4.36,
       "symbol": "^GSPC",
-      "note": "Rose broadly as midterm results removed a major source of uncertainty."
+      "note": "Fell about 335 points in its worst session since early 2025."
     },
     {
       "name": "Nasdaq",
-      "level": 25736.51,
-      "changePct": 1.44,
+      "level": 24315.0,
+      "changePct": -5.52,
       "symbol": "^IXIC",
-      "note": "Big cloud names rallied, though memory and chip stocks fell sharply."
+      "note": "Dropped into correction territory as chip and AI stocks sold off hard."
     },
     {
       "name": "Dow",
-      "level": 53356.12,
-      "changePct": 3.03,
+      "level": 51523.06,
+      "changePct": -3.44,
       "symbol": "^DJI",
-      "note": "Jumped about 1,569 points, its strongest post-midterm day in decades."
+      "note": "Lost about 1,833 points, giving back Wednesday's post-election rally."
     }
   ],
   "watchlist": [],
   "notes": [
-    "Democrats won control of both the House and Senate; investors read a divided government as lowering the odds of big policy shifts, and stocks recovered from an early dip into a broad rally.",
-    "Large cloud providers led tech: Microsoft and Amazon each rose about 6–7% and Alphabet gained 3–4%, while memory makers such as Micron, Seagate and SanDisk fell 7–8% and the chip index lost about 3%.",
-    "Oil slumped, with WTI down roughly 8% to about $88 on the election outcome and signs of diplomacy with Iran, hitting energy stocks; the 10-year Treasury yield eased to about 4.89% and gold rose about 3%."
+    "AI and semiconductor stocks led a broad sell-off: the chip index fell about 12%, with AMD and Micron down roughly 17% and Nvidia down about 9%.",
+    "Investors worried that the Democratic win in Congress could bring tighter rules on data-center buildout, and some took profits in this year's AI leaders; Tesla and SpaceX also fell more than 9%.",
+    "The VIX volatility gauge jumped about 70% to around 28, the 10-year Treasury yield slipped to about 4.84%, and WTI crude rebounded about 3% to near $91."
   ],
   "events": [
-    "Thu 5 Nov: counting continues in uncalled House races and the Alaska and Mississippi Senate contests.",
-    "Fri 6 Nov, 16:30 Kuwait time: US October jobs report."
+    "Fri 6 Nov, 16:30 Kuwait time: US October jobs report.",
+    "Fri 6 Nov: earnings from Duke Energy and others before the open; Airbnb and Lyft results from Thursday evening also in focus.",
+    "Wed 9 Dec, 22:00 Kuwait time: Federal Reserve rate decision."
   ],
   "sources": [
     {
-      "title": "Yahoo Finance market close, 4 Nov",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-4-221001197.html"
+      "title": "Yahoo Finance market live, 5 Nov",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-plunge-chip-stocks-melt-down-193726491.html"
     },
     {
-      "title": "TheStreet market live, 4 Nov",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026"
+      "title": "Motley Fool stock market today, 5 Nov",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/05/stock-market-today-nov-5-nasdaq-suffers-worst-day-in-18-months-as-ai-trade-comes-under-fire/"
     },
     {
-      "title": "TradingKey US stocks close, 4 Nov",
-      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262275848-us-stocks-close-dow-surges-1500-points-hyperscalers-amazon-ai-infrastructure-tradingkey"
+      "title": "StockTitan market close, 5 Nov",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-5-2026"
     }
   ]
 }
