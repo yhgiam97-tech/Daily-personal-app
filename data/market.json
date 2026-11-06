@@ -1,52 +1,52 @@
 {
-  "asOf": "2026-11-06T01:42:00+03:00",
-  "session": "Thu 5 Nov close",
+  "asOf": "2026-11-07T01:50:00+03:00",
+  "session": "Fri 6 Nov close",
   "indices": [
     {
       "name": "S&P 500",
-      "level": 7353.73,
-      "changePct": -4.36,
+      "level": 7376.86,
+      "changePct": 0.31,
       "symbol": "^GSPC",
-      "note": "Fell about 335 points in its worst session since early 2025."
+      "note": "Recovered a little of Thursday's slide but still lost 2.7% on the week."
     },
     {
       "name": "Nasdaq",
-      "level": 24315.0,
-      "changePct": -5.52,
+      "level": 24579.42,
+      "changePct": 1.09,
       "symbol": "^IXIC",
-      "note": "Dropped into correction territory as chip and AI stocks sold off hard."
+      "note": "Led the rebound as chip stocks bounced, ending the week down 3.4%."
     },
     {
       "name": "Dow",
-      "level": 51523.06,
-      "changePct": -3.44,
+      "level": 51285.73,
+      "changePct": -0.46,
       "symbol": "^DJI",
-      "note": "Lost about 1,833 points, giving back Wednesday's post-election rally."
+      "note": "Slipped about 237 points and finished the week down 0.9%."
     }
   ],
   "watchlist": [],
   "notes": [
-    "AI and semiconductor stocks led a broad sell-off: the chip index fell about 12%, with AMD and Micron down roughly 17% and Nvidia down about 9%.",
-    "Investors worried that the Democratic win in Congress could bring tighter rules on data-center buildout, and some took profits in this year's AI leaders; Tesla and SpaceX also fell more than 9%.",
-    "The VIX volatility gauge jumped about 70% to around 28, the 10-year Treasury yield slipped to about 4.84%, and WTI crude rebounded about 3% to near $91."
+    "Tech steadied after Thursday's AI sell-off: the semiconductor index rose about 4%, though it remains far below where it began the week.",
+    "October payrolls rose 165,000, well above forecasts, and unemployment dipped to 4.1%; the strong data added to talk of a possible Fed rate hike in December.",
+    "The VIX eased about 9% to near 25.6, the 10-year Treasury yield edged up to about 4.86%, and WTI crude held near $90."
   ],
   "events": [
-    "Fri 6 Nov, 16:30 Kuwait time: US October jobs report.",
-    "Fri 6 Nov: earnings from Duke Energy and others before the open; Airbnb and Lyft results from Thursday evening also in focus.",
+    "Tue 10 Nov, 16:30 Kuwait time: US October consumer price index (CPI).",
+    "Wed 11 Nov: Veterans Day; stock markets open, bond market closed.",
     "Wed 9 Dec, 22:00 Kuwait time: Federal Reserve rate decision."
   ],
   "sources": [
     {
-      "title": "Yahoo Finance market live, 5 Nov",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-plunge-chip-stocks-melt-down-193726491.html"
+      "title": "AP: How major US stock indexes fared, 6 Nov",
+      "url": "https://au.finance.yahoo.com/news/major-us-stock-indexes-fared-212037857.html"
     },
     {
-      "title": "Motley Fool stock market today, 5 Nov",
-      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/05/stock-market-today-nov-5-nasdaq-suffers-worst-day-in-18-months-as-ai-trade-comes-under-fire/"
+      "title": "Yahoo Finance market live, 6 Nov",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html"
     },
     {
-      "title": "StockTitan market close, 5 Nov",
-      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-5-2026"
+      "title": "FXNX: US CPI release time, 10 Nov",
+      "url": "https://fxnx.com/en/blog/us-cpi-10-november-2026-release-time-what-measures"
     }
   ]
 }
