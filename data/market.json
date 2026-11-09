@@ -1,52 +1,52 @@
 {
-  "asOf": "2026-11-07T01:50:00+03:00",
-  "session": "Fri 6 Nov close",
+  "asOf": "2026-11-10T01:50:00+03:00",
+  "session": "Mon 9 Nov close",
   "indices": [
     {
       "name": "S&P 500",
-      "level": 7376.86,
-      "changePct": 0.31,
+      "level": 7549.94,
+      "changePct": 2.35,
       "symbol": "^GSPC",
-      "note": "Recovered a little of Thursday's slide but still lost 2.7% on the week."
+      "note": "Gained about 173 points, winning back most of last week's 2.7% loss."
     },
     {
       "name": "Nasdaq",
-      "level": 24579.42,
-      "changePct": 1.09,
+      "level": 25253.14,
+      "changePct": 2.74,
       "symbol": "^IXIC",
-      "note": "Led the rebound as chip stocks bounced, ending the week down 3.4%."
+      "note": "Led the rally as chipmakers rebounded, adding about 674 points."
     },
     {
       "name": "Dow",
-      "level": 51285.73,
-      "changePct": -0.46,
+      "level": 52389.75,
+      "changePct": 2.15,
       "symbol": "^DJI",
-      "note": "Slipped about 237 points and finished the week down 0.9%."
+      "note": "Jumped 1,104 points in a broad advance."
     }
   ],
   "watchlist": [],
   "notes": [
-    "Tech steadied after Thursday's AI sell-off: the semiconductor index rose about 4%, though it remains far below where it began the week.",
-    "October payrolls rose 165,000, well above forecasts, and unemployment dipped to 4.1%; the strong data added to talk of a possible Fed rate hike in December.",
-    "The VIX eased about 9% to near 25.6, the 10-year Treasury yield edged up to about 4.86%, and WTI crude held near $90."
+    "The AI trade bounced back after last week's sell-off: chip stocks led, with AMD up about 12% on an analyst upgrade, and the small-cap Russell 2000 rose about 3%.",
+    "Nvidia fell about 4% after its board opened an investigation involving CEO Jensen Huang, trimming a loss that reached about 8% early in the day.",
+    "Oil slid after President Trump said new strikes on Iran were unlikely while talks continue: December WTI fell about 4.5% to near $86.75, and the VIX dropped about 22% to just under 20."
   ],
   "events": [
-    "Tue 10 Nov, 16:30 Kuwait time: US October consumer price index (CPI).",
+    "Tue 10 Nov, 16:30 Kuwait time: US October consumer price index (CPI); forecasts call for a 0.3% monthly rise.",
     "Wed 11 Nov: Veterans Day; stock markets open, bond market closed.",
     "Wed 9 Dec, 22:00 Kuwait time: Federal Reserve rate decision."
   ],
   "sources": [
     {
-      "title": "AP: How major US stock indexes fared, 6 Nov",
-      "url": "https://au.finance.yahoo.com/news/major-us-stock-indexes-fared-212037857.html"
+      "title": "Yahoo Finance market live, 9 Nov",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html"
     },
     {
-      "title": "Yahoo Finance market live, 6 Nov",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html"
+      "title": "JKN: Wall Street rallies, all three indices rise",
+      "url": "https://news.jkn.co.kr/editions/english/post/1081974"
     },
     {
-      "title": "FXNX: US CPI release time, 10 Nov",
-      "url": "https://fxnx.com/en/blog/us-cpi-10-november-2026-release-time-what-measures"
+      "title": "TheStreet: Stock market today, 9 Nov",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-09-202"
     }
   ]
 }
