@@ -1,52 +1,52 @@
 {
-  "asOf": "2026-11-10T01:50:00+03:00",
-  "session": "Mon 9 Nov close",
+  "asOf": "2026-11-11T01:42:00+03:00",
+  "session": "Tue 10 Nov close",
   "indices": [
     {
       "name": "S&P 500",
-      "level": 7549.94,
-      "changePct": 2.35,
+      "level": 7520.93,
+      "changePct": -0.38,
       "symbol": "^GSPC",
-      "note": "Gained about 173 points, winning back most of last week's 2.7% loss."
+      "note": "Slipped about 29 points as a hotter inflation report lifted rate-hike bets."
     },
     {
       "name": "Nasdaq",
-      "level": 25253.14,
-      "changePct": 2.74,
+      "level": 25065.88,
+      "changePct": -0.74,
       "symbol": "^IXIC",
-      "note": "Led the rally as chipmakers rebounded, adding about 674 points."
+      "note": "Fell about 187 points, with Nvidia the biggest drag."
     },
     {
       "name": "Dow",
-      "level": 52389.75,
-      "changePct": 2.15,
+      "level": 52231.89,
+      "changePct": -0.30,
       "symbol": "^DJI",
-      "note": "Jumped 1,104 points in a broad advance."
+      "note": "Gave back about 158 points of Monday's 1,104-point jump."
     }
   ],
   "watchlist": [],
   "notes": [
-    "The AI trade bounced back after last week's sell-off: chip stocks led, with AMD up about 12% on an analyst upgrade, and the small-cap Russell 2000 rose about 3%.",
-    "Nvidia fell about 4% after its board opened an investigation involving CEO Jensen Huang, trimming a loss that reached about 8% early in the day.",
-    "Oil slid after President Trump said new strikes on Iran were unlikely while talks continue: December WTI fell about 4.5% to near $86.75, and the VIX dropped about 22% to just under 20."
+    "October consumer prices rose 0.4% for the month and core prices 0.3%, both a tenth above forecasts; there is no annual rate this time because October 2025 data was lost to the shutdown.",
+    "Traders now put roughly an 84% chance on a quarter-point Fed hike in December, and some started pricing a half-point move; Treasury yields climbed toward 5%.",
+    "Nvidia dropped about 5.5% to near $169 as scrutiny of CEO Jensen Huang widened, including a board probe and a report on chip shipments to China; gold, oil and bitcoin also fell."
   ],
   "events": [
-    "Tue 10 Nov, 16:30 Kuwait time: US October consumer price index (CPI); forecasts call for a 0.3% monthly rise.",
     "Wed 11 Nov: Veterans Day; stock markets open, bond market closed.",
+    "Thu 19 or Fri 20 Nov: Anthropic's IPO is expected to start trading on Nasdaq, priced at $70–78 a share.",
     "Wed 9 Dec, 22:00 Kuwait time: Federal Reserve rate decision."
   ],
   "sources": [
     {
-      "title": "Yahoo Finance market live, 9 Nov",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html"
+      "title": "Yahoo Finance market live, 10 Nov",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html"
     },
     {
-      "title": "JKN: Wall Street rallies, all three indices rise",
-      "url": "https://news.jkn.co.kr/editions/english/post/1081974"
+      "title": "TheStreet: Stock market today, 10 Nov",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-10-2026"
     },
     {
-      "title": "TheStreet: Stock market today, 9 Nov",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-09-202"
+      "title": "Stock Titan: Stock market today, 10 Nov",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-10-2026"
     }
   ]
 }
