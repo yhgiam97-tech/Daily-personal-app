@@ -1,52 +1,48 @@
 {
-  "asOf": "2026-11-11T01:42:00+03:00",
-  "session": "Tue 10 Nov close",
+  "asOf": "2026-11-12T01:47:00+03:00",
+  "session": "Wed 11 Nov close",
   "indices": [
     {
       "name": "S&P 500",
-      "level": 7520.93,
-      "changePct": -0.38,
+      "level": 7619.38,
+      "changePct": 1.31,
       "symbol": "^GSPC",
-      "note": "Slipped about 29 points as a hotter inflation report lifted rate-hike bets."
+      "note": "Gained about 98 points as tech led a broad rebound."
     },
     {
       "name": "Nasdaq",
-      "level": 25065.88,
-      "changePct": -0.74,
+      "level": 25466.19,
+      "changePct": 1.60,
       "symbol": "^IXIC",
-      "note": "Fell about 187 points, with Nvidia the biggest drag."
+      "note": "Rose about 400 points as chip stocks rallied hard."
     },
     {
       "name": "Dow",
-      "level": 52231.89,
-      "changePct": -0.30,
+      "level": 52486.49,
+      "changePct": 0.49,
       "symbol": "^DJI",
-      "note": "Gave back about 158 points of Monday's 1,104-point jump."
+      "note": "Added about 255 points, recovering Tuesday's dip."
     }
   ],
   "watchlist": [],
   "notes": [
-    "October consumer prices rose 0.4% for the month and core prices 0.3%, both a tenth above forecasts; there is no annual rate this time because October 2025 data was lost to the shutdown.",
-    "Traders now put roughly an 84% chance on a quarter-point Fed hike in December, and some started pricing a half-point move; Treasury yields climbed toward 5%.",
-    "Nvidia dropped about 5.5% to near $169 as scrutiny of CEO Jensen Huang widened, including a board probe and a report on chip shipments to China; gold, oil and bitcoin also fell."
+    "CoreWeave beat forecasts, with revenue up 168% to $3.7 billion and a higher full-year outlook; its shares jumped roughly 20%, easing worries about how AI data centres get financed.",
+    "Chipmakers led the rebound: Micron, Sandisk and SK Hynix each rose more than 10%, and Nvidia gained about 3% to near $174, ending a two-day slide despite a Baird downgrade.",
+    "Apple set a record above $355, valuing it near $5.2 trillion; the bond market was shut for Veterans Day, and traders still see a December Fed hike as almost fully priced."
   ],
   "events": [
-    "Wed 11 Nov: Veterans Day; stock markets open, bond market closed.",
+    "Thu 12 Nov, before the US open: Nebius reports quarterly results.",
     "Thu 19 or Fri 20 Nov: Anthropic's IPO is expected to start trading on Nasdaq, priced at $70–78 a share.",
     "Wed 9 Dec, 22:00 Kuwait time: Federal Reserve rate decision."
   ],
   "sources": [
     {
-      "title": "Yahoo Finance market live, 10 Nov",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html"
+      "title": "Yahoo Finance market live, 11 Nov",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html"
     },
     {
-      "title": "TheStreet: Stock market today, 10 Nov",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-10-2026"
-    },
-    {
-      "title": "Stock Titan: Stock market today, 10 Nov",
-      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-10-2026"
+      "title": "TheStreet: Stock market today, 11 Nov",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-11-2026"
     }
   ]
 }
