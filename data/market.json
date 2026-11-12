@@ -1,48 +1,52 @@
 {
-  "asOf": "2026-11-12T01:47:00+03:00",
-  "session": "Wed 11 Nov close",
+  "asOf": "2026-11-13T01:43:00+03:00",
+  "session": "Thu 12 Nov close",
   "indices": [
     {
       "name": "S&P 500",
-      "level": 7619.38,
-      "changePct": 1.31,
+      "level": 7592.40,
+      "changePct": -0.35,
       "symbol": "^GSPC",
-      "note": "Gained about 98 points as tech led a broad rebound."
+      "note": "Lost about 27 points after recovering most of an early drop."
     },
     {
       "name": "Nasdaq",
-      "level": 25466.19,
-      "changePct": 1.60,
+      "level": 25366.09,
+      "changePct": -0.39,
       "symbol": "^IXIC",
-      "note": "Rose about 400 points as chip stocks rallied hard."
+      "note": "Fell about 100 points as Nvidia weighed on tech."
     },
     {
       "name": "Dow",
-      "level": 52486.49,
-      "changePct": 0.49,
+      "level": 52297.09,
+      "changePct": -0.36,
       "symbol": "^DJI",
-      "note": "Added about 255 points, recovering Tuesday's dip."
+      "note": "Shed about 189 points, giving back most of Wednesday's gain."
     }
   ],
   "watchlist": [],
   "notes": [
-    "CoreWeave beat forecasts, with revenue up 168% to $3.7 billion and a higher full-year outlook; its shares jumped roughly 20%, easing worries about how AI data centres get financed.",
-    "Chipmakers led the rebound: Micron, Sandisk and SK Hynix each rose more than 10%, and Nvidia gained about 3% to near $174, ending a two-day slide despite a Baird downgrade.",
-    "Apple set a record above $355, valuing it near $5.2 trillion; the bond market was shut for Veterans Day, and traders still see a December Fed hike as almost fully priced."
+    "Nvidia fell 4.3% to about $166 after Jensen Huang resigned as CEO with immediate effect and Colette Kress was named interim CEO; the stock was down as much as 13–14% early before halving the loss.",
+    "Other chipmakers split: Broadcom rose about 5.5% and AMD nearly 6%, while Micron and Intel slipped; stocks opened almost 1% lower and recovered to modest losses.",
+    "The 10-year Treasury yield climbed to about 5.10% as Fed officials signalled more tightening may be needed, oil rose after Trump's comments on Iran, and the small-cap Russell 2000 dropped 1.7%."
   ],
   "events": [
-    "Thu 12 Nov, before the US open: Nebius reports quarterly results.",
-    "Thu 19 or Fri 20 Nov: Anthropic's IPO is expected to start trading on Nasdaq, priced at $70–78 a share.",
-    "Wed 9 Dec, 22:00 Kuwait time: Federal Reserve rate decision."
+    "Tue 17 Nov, after the US close (overnight into Wed, Kuwait time): Nvidia reports quarterly results.",
+    "Thu 19 Nov: Anthropic's IPO is expected to start trading on Nasdaq, with pricing due the day before.",
+    "Wed 9 Dec, 22:00 Kuwait time: Federal Reserve rate decision; markets are pricing in a hike."
   ],
   "sources": [
     {
-      "title": "Yahoo Finance market live, 11 Nov",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html"
+      "title": "Yahoo Finance market live, 12 Nov",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-invest-110027430.html"
     },
     {
-      "title": "TheStreet: Stock market today, 11 Nov",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-11-2026"
+      "title": "AP via KRMG: How major US stock indexes fared, 12 Nov",
+      "url": "https://krmg.com/2026/11/12/how-major-us-stock-indexes-fared-thursday-11-12-2026/"
+    },
+    {
+      "title": "Portfolio Terminal: Stock market close, 12 Nov",
+      "url": "https://portfolio-terminal.com/markets/stock-market-close"
     }
   ]
 }
