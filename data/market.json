@@ -1,34 +1,34 @@
 {
-  "asOf": "2026-11-13T01:43:00+03:00",
-  "session": "Thu 12 Nov close",
+  "asOf": "2026-11-14T01:42:00+03:00",
+  "session": "Fri 13 Nov close",
   "indices": [
     {
       "name": "S&P 500",
-      "level": 7592.40,
-      "changePct": -0.35,
+      "level": 7561.67,
+      "changePct": -0.40,
       "symbol": "^GSPC",
-      "note": "Lost about 27 points after recovering most of an early drop."
+      "note": "Lost about 31 points but still logged its first weekly gain since early October."
     },
     {
       "name": "Nasdaq",
-      "level": 25366.09,
-      "changePct": -0.39,
+      "level": 25136.27,
+      "changePct": -0.91,
       "symbol": "^IXIC",
-      "note": "Fell about 100 points as Nvidia weighed on tech."
+      "note": "Dropped about 230 points as chip stocks sold off again."
     },
     {
       "name": "Dow",
-      "level": 52297.09,
-      "changePct": -0.36,
+      "level": 52347.55,
+      "changePct": 0.10,
       "symbol": "^DJI",
-      "note": "Shed about 189 points, giving back most of Wednesday's gain."
+      "note": "Edged up about 50 points as money rotated out of tech."
     }
   ],
   "watchlist": [],
   "notes": [
-    "Nvidia fell 4.3% to about $166 after Jensen Huang resigned as CEO with immediate effect and Colette Kress was named interim CEO; the stock was down as much as 13–14% early before halving the loss.",
-    "Other chipmakers split: Broadcom rose about 5.5% and AMD nearly 6%, while Micron and Intel slipped; stocks opened almost 1% lower and recovered to modest losses.",
-    "The 10-year Treasury yield climbed to about 5.10% as Fed officials signalled more tightening may be needed, oil rose after Trump's comments on Iran, and the small-cap Russell 2000 dropped 1.7%."
+    "Chipmakers led the decline a day after Jensen Huang's exit as Nvidia CEO: Nvidia slipped 2% to about $163 (roughly 12% lower for the week), AMD fell about 8–9%, and Broadcom, Intel and Micron each lost around 5–6%.",
+    "October producer prices rose 0.3% on the month, a bit below forecasts, but the 6.5% yearly rise was the biggest since late 2022; the 10-year Treasury yield touched about 5.17% and traders still expect a Fed hike in December.",
+    "Tech was the weakest sector while consumer staples and communication services gained; oil was roughly flat near $89, and Bitcoin fell below $70,000 for the first time in about three months."
   ],
   "events": [
     "Tue 17 Nov, after the US close (overnight into Wed, Kuwait time): Nvidia reports quarterly results.",
@@ -37,16 +37,16 @@
   ],
   "sources": [
     {
-      "title": "Yahoo Finance market live, 12 Nov",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-invest-110027430.html"
+      "title": "AP via KRMG: How major US stock indexes fared, 13 Nov",
+      "url": "https://krmg.com/2026/11/13/how-major-us-stock-indexes-fared-friday-11-13-2026/"
     },
     {
-      "title": "AP via KRMG: How major US stock indexes fared, 12 Nov",
-      "url": "https://krmg.com/2026/11/12/how-major-us-stock-indexes-fared-thursday-11-12-2026/"
+      "title": "Yahoo Finance market live, 13 Nov",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html"
     },
     {
-      "title": "Portfolio Terminal: Stock market close, 12 Nov",
-      "url": "https://portfolio-terminal.com/markets/stock-market-close"
+      "title": "24/7 Wall St: S&P 500 closes down 0.4% as tech drags",
+      "url": "https://247wallst.com/cards/money-moved-out-of-tech-and-into-everything-else-today-the-gspc-market-bell-01m7bbjh5wpep4vmjk7jwpas8h"
     }
   ]
 }
