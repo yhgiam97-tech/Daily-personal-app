@@ -1,52 +1,52 @@
 {
-  "asOf": "2026-11-17T01:43:00+03:00",
-  "session": "Mon 16 Nov close",
+  "asOf": "2026-11-18T01:43:00+03:00",
+  "session": "Tue 17 Nov close",
   "indices": [
     {
       "name": "S&P 500",
-      "level": 7416.59,
-      "changePct": -1.92,
+      "level": 7340.53,
+      "changePct": -1.03,
       "symbol": "^GSPC",
-      "note": "Fell about 145 points in a broad selloff led by tech."
+      "note": "Fell about 76 points, a fourth straight losing day."
     },
     {
       "name": "Nasdaq",
-      "level": 24509.76,
-      "changePct": -2.49,
+      "level": 24328.38,
+      "changePct": -0.74,
       "symbol": "^IXIC",
-      "note": "Lost about 627 points as chip and AI stocks slid again."
+      "note": "Lost about 181 points after recovering from a much deeper intraday drop."
     },
     {
       "name": "Dow",
-      "level": 51608.17,
-      "changePct": -1.41,
+      "level": 50759.42,
+      "changePct": -1.64,
       "symbol": "^DJI",
-      "note": "Dropped about 739 points, with big banks also lower."
+      "note": "Dropped about 849 points, with Salesforce its worst member."
     }
   ],
   "watchlist": [],
   "notes": [
-    "Nvidia fell about 4% to roughly $156, nearly 13% lower over five days, after reports that its board isn't weighing Jensen Huang's return; new US curbs on AI chip exports also hit the group, with AMD down about 5.6% and Intel about 7%.",
-    "Alphabet and Amazon each lost around 3%, and investors trimmed AI holdings ahead of Anthropic's Nasdaq debut later this week; the VIX fear gauge jumped about 20% to near 23.",
-    "Big banks slipped about 2% amid reports of app and transaction outages; oil fell more than 3% to about $85 as Strait of Hormuz shipping recovered, and Bitcoin hovered near $64,000."
+    "Every S&P sector fell as a report of an outage on a classified NSA network added to jitters after recent tech glitches; software led losses, with Salesforce down about 9.5% and Intuit, Workday and Adobe also sharply lower.",
+    "Inflation worries persisted: import prices rose again in October and Fed officials signalled openness to further hikes, even though October retail sales beat forecasts with a 0.2% gain; the VIX climbed to around 26.",
+    "Nvidia closed down about 0.4% before its results, then beat estimates after the bell and rose as much as 3% in extended trading; Home Depot fell about 2.5% on weak guidance and a CEO change."
   ],
   "events": [
-    "Tue 17 Nov, after the US close (overnight into Wed, Kuwait time): Nvidia reports quarterly results, its first since Jensen Huang's exit.",
-    "Thu 19 Nov: Anthropic's IPO is expected to start trading on Nasdaq.",
-    "Wed 9 Dec, 22:00 Kuwait time: Federal Reserve rate decision; markets are pricing in a hike."
+    "Wed 18 Nov, 22:00 Kuwait time: minutes from the Fed's October meeting are released.",
+    "Wed 18 to Thu 19 Nov: Anthropic is expected to begin trading on Nasdaq (reports differ on the exact day).",
+    "Wed 9 Dec, 22:00 Kuwait time: Federal Reserve rate decision; futures price a high chance of a quarter-point hike."
   ],
   "sources": [
     {
-      "title": "Yahoo Finance market live, 16 Nov",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-16-dow-sp-500-nasdaq-nvidia-oil-091631084.html"
+      "title": "Kiplinger: Dow dives 848 points as NSA outage wrecks tech",
+      "url": "https://www.kiplinger.com/investing/stocks/dow-dives-848-points-as-nsa-outage-wrecks-tech-stock-market-today"
     },
     {
-      "title": "Motley Fool: Stock Market Today, Nov. 16",
-      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/16/stock-market-today-nov-16-tech-selloff-deepens-as-ai-leadership-crisis-rattles-nasdaq/"
+      "title": "MarketScreener: Wall Street ends lower ahead of Nvidia results",
+      "url": "https://www.marketscreener.com/news/wall-street-ends-lower-ahead-of-nvidia-results-focus-turns-to-anthropic-debut-ce785edcdc81fe2d"
     },
     {
-      "title": "24/7 Wall St: S&P 500 closes down as Nasdaq leads market lower",
-      "url": "https://247wallst.com/cards/tech-took-the-worst-of-it-the-nasdaq-s-2-54-drop-nearly-do-gspc-market-bell-01m7k2rvdndtgg635thrxjgnck"
+      "title": "Yahoo Finance market live, 17 Nov",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-17-dow-sp-500-nasdaq-nvidia-earnings-retail-sales-143848454.html"
     }
   ]
 }
