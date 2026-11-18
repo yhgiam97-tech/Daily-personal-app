@@ -1,52 +1,52 @@
 {
-  "asOf": "2026-11-18T01:43:00+03:00",
-  "session": "Tue 17 Nov close",
+  "asOf": "2026-11-19T01:50:00+03:00",
+  "session": "Wed 18 Nov close",
   "indices": [
     {
       "name": "S&P 500",
-      "level": 7340.53,
-      "changePct": -1.03,
+      "level": 7323.63,
+      "changePct": -0.23,
       "symbol": "^GSPC",
-      "note": "Fell about 76 points, a fourth straight losing day."
+      "note": "Slipped about 17 points, a fifth straight losing day."
     },
     {
       "name": "Nasdaq",
-      "level": 24328.38,
-      "changePct": -0.74,
+      "level": 24429.88,
+      "changePct": 0.42,
       "symbol": "^IXIC",
-      "note": "Lost about 181 points after recovering from a much deeper intraday drop."
+      "note": "Gained about 102 points as chipmakers and AI names firmed ahead of Anthropic's debut."
     },
     {
       "name": "Dow",
-      "level": 50759.42,
-      "changePct": -1.64,
+      "level": 50198.17,
+      "changePct": -1.11,
       "symbol": "^DJI",
-      "note": "Dropped about 849 points, with Salesforce its worst member."
+      "note": "Fell about 561 points, dragged down by UnitedHealth and other health insurers."
     }
   ],
   "watchlist": [],
   "notes": [
-    "Every S&P sector fell as a report of an outage on a classified NSA network added to jitters after recent tech glitches; software led losses, with Salesforce down about 9.5% and Intuit, Workday and Adobe also sharply lower.",
-    "Inflation worries persisted: import prices rose again in October and Fed officials signalled openness to further hikes, even though October retail sales beat forecasts with a 0.2% gain; the VIX climbed to around 26.",
-    "Nvidia closed down about 0.4% before its results, then beat estimates after the bell and rose as much as 3% in extended trading; Home Depot fell about 2.5% on weak guidance and a CEO change."
+    "Health insurers slumped for a second day after Medicare proposed a tougher anti-fraud audit rule; UnitedHealth, Humana, CVS and Cigna all fell, weighing heavily on the Dow.",
+    "Nvidia gave back an early post-earnings gain and closed down roughly 3%, while the Nasdaq still edged up as investors looked ahead to Anthropic's IPO, which reportedly priced above its $70–78 range.",
+    "Minutes from the Fed's October meeting showed nearly all officials saw further rate hikes as likely appropriate; Target rose after beating estimates with help from tariff refunds, and the 10-year yield stayed near 5.07%."
   ],
   "events": [
-    "Wed 18 Nov, 22:00 Kuwait time: minutes from the Fed's October meeting are released.",
-    "Wed 18 to Thu 19 Nov: Anthropic is expected to begin trading on Nasdaq (reports differ on the exact day).",
-    "Wed 9 Dec, 22:00 Kuwait time: Federal Reserve rate decision; futures price a high chance of a quarter-point hike."
+    "Thu 19 Nov: Anthropic is expected to begin trading on Nasdaq under the ticker ANT.",
+    "Thu 19 Nov, 18:00 Kuwait time: Census Bureau advance Q3 services report.",
+    "Wed 9 Dec, 22:00 Kuwait time: Federal Reserve rate decision, with a hike under debate."
   ],
   "sources": [
     {
-      "title": "Kiplinger: Dow dives 848 points as NSA outage wrecks tech",
-      "url": "https://www.kiplinger.com/investing/stocks/dow-dives-848-points-as-nsa-outage-wrecks-tech-stock-market-today"
+      "title": "Yahoo Finance market live, 18 Nov",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-18-dow-sp-500-nasdaq-nvidia-earnings-anthropic-ipo-143530588.html"
     },
     {
-      "title": "MarketScreener: Wall Street ends lower ahead of Nvidia results",
-      "url": "https://www.marketscreener.com/news/wall-street-ends-lower-ahead-of-nvidia-results-focus-turns-to-anthropic-debut-ce785edcdc81fe2d"
+      "title": "Vistap Global: Dow falls 561 points, Nasdaq rises ahead of Anthropic IPO",
+      "url": "https://vistapglobal.com/u-s-stock-market-today-november-18-2026-dow-falls-561-points-nasdaq-rises-ahead-of-anthropic-ipo-ant-eprx-googl-modd-nvda-ser-tgt/"
     },
     {
-      "title": "Yahoo Finance market live, 17 Nov",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-17-dow-sp-500-nasdaq-nvidia-earnings-retail-sales-143848454.html"
+      "title": "StockTitan: Stock market today live, 18 Nov",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-18-2026"
     }
   ]
 }
