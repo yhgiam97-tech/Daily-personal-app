@@ -1,52 +1,48 @@
 {
-  "asOf": "2026-11-19T01:50:00+03:00",
-  "session": "Wed 18 Nov close",
+  "asOf": "2026-11-20T01:43:00+03:00",
+  "session": "Thu 19 Nov close",
   "indices": [
     {
       "name": "S&P 500",
-      "level": 7323.63,
-      "changePct": -0.23,
+      "level": 7175.83,
+      "changePct": -2.02,
       "symbol": "^GSPC",
-      "note": "Slipped about 17 points, a fifth straight losing day."
+      "note": "Lost about 148 points, a sixth straight losing day."
     },
     {
       "name": "Nasdaq",
-      "level": 24429.88,
-      "changePct": 0.42,
+      "level": 23879.2,
+      "changePct": -2.25,
       "symbol": "^IXIC",
-      "note": "Gained about 102 points as chipmakers and AI names firmed ahead of Anthropic's debut."
+      "note": "Dropped about 551 points as chip and AI stocks sold off."
     },
     {
       "name": "Dow",
-      "level": 50198.17,
-      "changePct": -1.11,
+      "level": 49097.06,
+      "changePct": -2.19,
       "symbol": "^DJI",
-      "note": "Fell about 561 points, dragged down by UnitedHealth and other health insurers."
+      "note": "Fell about 1,101 points, slipping back below 50,000."
     }
   ],
   "watchlist": [],
   "notes": [
-    "Health insurers slumped for a second day after Medicare proposed a tougher anti-fraud audit rule; UnitedHealth, Humana, CVS and Cigna all fell, weighing heavily on the Dow.",
-    "Nvidia gave back an early post-earnings gain and closed down roughly 3%, while the Nasdaq still edged up as investors looked ahead to Anthropic's IPO, which reportedly priced above its $70–78 range.",
-    "Minutes from the Fed's October meeting showed nearly all officials saw further rate hikes as likely appropriate; Target rose after beating estimates with help from tariff refunds, and the 10-year yield stayed near 5.07%."
+    "Stocks opened higher, then turned sharply lower in the afternoon as talk of further Fed rate hikes and stretched valuations spread selling across almost every sector; only energy and staples ended up.",
+    "Anthropic debuted on Nasdaq after pricing at $83, opened near $111.50, then faded to close around $97, still up about 17% on its first day.",
+    "Chipmakers led the slide: AMD fell nearly 8% after a short-seller report on China ties, and Nvidia lost over 3% despite strong results; the VIX jumped about 14% to near 28."
   ],
   "events": [
-    "Thu 19 Nov: Anthropic is expected to begin trading on Nasdaq under the ticker ANT.",
-    "Thu 19 Nov, 18:00 Kuwait time: Census Bureau advance Q3 services report.",
+    "Fri 20 Nov: monthly options expiration day on US exchanges.",
+    "Thu 26 Nov: US markets closed for Thanksgiving; Fri 27 Nov closes early, at 21:00 Kuwait time.",
     "Wed 9 Dec, 22:00 Kuwait time: Federal Reserve rate decision, with a hike under debate."
   ],
   "sources": [
     {
-      "title": "Yahoo Finance market live, 18 Nov",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-18-dow-sp-500-nasdaq-nvidia-earnings-anthropic-ipo-143530588.html"
+      "title": "Motley Fool: Dow plunges 1,100 points as S&P 500 falls a 6th straight day",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/19/stock-market-today-nov-19-dow-plunges-1-100-points-as-the-s-and-p-500-suffers-its-6th-straight-day-of-losses/"
     },
     {
-      "title": "Vistap Global: Dow falls 561 points, Nasdaq rises ahead of Anthropic IPO",
-      "url": "https://vistapglobal.com/u-s-stock-market-today-november-18-2026-dow-falls-561-points-nasdaq-rises-ahead-of-anthropic-ipo-ant-eprx-googl-modd-nvda-ser-tgt/"
-    },
-    {
-      "title": "StockTitan: Stock market today live, 18 Nov",
-      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-18-2026"
+      "title": "Yahoo Finance market live, 19 Nov",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-19-dow-sp-500-nasdaq-anthropic-ipo-live-141306032.html"
     }
   ]
 }
