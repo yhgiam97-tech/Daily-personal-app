@@ -1,48 +1,52 @@
 {
-  "asOf": "2026-11-20T01:43:00+03:00",
-  "session": "Thu 19 Nov close",
+  "asOf": "2026-11-21T01:43:00+03:00",
+  "session": "Fri 20 Nov close",
   "indices": [
     {
       "name": "S&P 500",
-      "level": 7175.83,
-      "changePct": -2.02,
+      "level": 6910.39,
+      "changePct": -3.7,
       "symbol": "^GSPC",
-      "note": "Lost about 148 points, a sixth straight losing day."
+      "note": "Lost about 265 points, a seventh straight drop, and is now in a correction."
     },
     {
       "name": "Nasdaq",
-      "level": 23879.2,
-      "changePct": -2.25,
+      "level": 22617.73,
+      "changePct": -5.28,
       "symbol": "^IXIC",
-      "note": "Dropped about 551 points as chip and AI stocks sold off."
+      "note": "Fell about 1,261 points and is now down for 2026."
     },
     {
       "name": "Dow",
-      "level": 49097.06,
-      "changePct": -2.19,
+      "level": 48147.33,
+      "changePct": -1.93,
       "symbol": "^DJI",
-      "note": "Fell about 1,101 points, slipping back below 50,000."
+      "note": "Dropped about 950 points, also closing in correction territory."
     }
   ],
   "watchlist": [],
   "notes": [
-    "Stocks opened higher, then turned sharply lower in the afternoon as talk of further Fed rate hikes and stretched valuations spread selling across almost every sector; only energy and staples ended up.",
-    "Anthropic debuted on Nasdaq after pricing at $83, opened near $111.50, then faded to close around $97, still up about 17% on its first day.",
-    "Chipmakers led the slide: AMD fell nearly 8% after a short-seller report on China ties, and Nvidia lost over 3% despite strong results; the VIX jumped about 14% to near 28."
+    "The AI sell-off deepened: chipmakers led the slide, with Nvidia down about 14%, Micron and AMD about 13% and Broadcom about 12%; the Philadelphia chip index lost nearly 11%.",
+    "Worries about AI spending and valuations, a reported SEC look at Nvidia's accounting and hawkish Fed comments weighed on stocks; Treasuries rallied, pulling the 10-year yield to about 4.93%.",
+    "It was the S&P 500's worst week in over 18 months, down about 8.6%, while the Nasdaq fell about 10%; Anthropic slid 9% to $88.30, still above its $83 IPO price."
   ],
   "events": [
-    "Fri 20 Nov: monthly options expiration day on US exchanges.",
+    "Mon 23 Nov, 17:45 Kuwait time: flash PMI readings on US business activity.",
     "Thu 26 Nov: US markets closed for Thanksgiving; Fri 27 Nov closes early, at 21:00 Kuwait time.",
-    "Wed 9 Dec, 22:00 Kuwait time: Federal Reserve rate decision, with a hike under debate."
+    "Wed 9 Dec, 22:00 Kuwait time: Federal Reserve rate decision, with markets pricing a likely hike."
   ],
   "sources": [
     {
-      "title": "Motley Fool: Dow plunges 1,100 points as S&P 500 falls a 6th straight day",
-      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/19/stock-market-today-nov-19-dow-plunges-1-100-points-as-the-s-and-p-500-suffers-its-6th-straight-day-of-losses/"
+      "title": "AP via myMotherLode: How major US stock indexes fared Friday 11/20/2026",
+      "url": "https://mymotherlode.com/news/national/11327378/how-major-us-stock-indexes-fared-friday-11-20-2026.html"
     },
     {
-      "title": "Yahoo Finance market live, 19 Nov",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-19-dow-sp-500-nasdaq-anthropic-ipo-live-141306032.html"
+      "title": "AP via 94.7 QDR: S&P 500 sinks 3.7% and the Nasdaq goes negative for the year",
+      "url": "https://www.947qdr.com/2026/11/20/the-closing-bell-sp-500-sinks-3-7-and-the-nasdaq-composite-goes-negative-for-the-year/"
+    },
+    {
+      "title": "investingLive Americas wrap, 20 Nov: Nasdaq plunges 5.28%",
+      "url": "https://investinglive.com/news/investinglive-americas-fx-news-wrap-20-nov-stocks-get-hammered-as-nasdaq-plunges-5-28/"
     }
   ]
 }
