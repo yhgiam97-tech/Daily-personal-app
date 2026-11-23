@@ -1,52 +1,51 @@
 {
-  "asOf": "2026-11-21T01:43:00+03:00",
-  "session": "Fri 20 Nov close",
+  "asOf": "2026-11-24T01:42:00+03:00",
+  "session": "Mon 23 Nov close",
   "indices": [
     {
       "name": "S&P 500",
-      "level": 6910.39,
-      "changePct": -3.7,
+      "level": 7237.17,
+      "changePct": 4.73,
       "symbol": "^GSPC",
-      "note": "Lost about 265 points, a seventh straight drop, and is now in a correction."
+      "note": "Gained about 327 points, ending a seven-day losing streak and leaving correction territory."
     },
     {
       "name": "Nasdaq",
-      "level": 22617.73,
-      "changePct": -5.28,
+      "level": 24089.56,
+      "changePct": 6.51,
       "symbol": "^IXIC",
-      "note": "Fell about 1,261 points and is now down for 2026."
+      "note": "Jumped about 1,472 points and is back to a gain of about 3.6% for 2026."
     },
     {
       "name": "Dow",
-      "level": 48147.33,
-      "changePct": -1.93,
+      "level": 49595.31,
+      "changePct": 3.01,
       "symbol": "^DJI",
-      "note": "Dropped about 950 points, also closing in correction territory."
+      "note": "Rose about 1,448 points as the rally spread well beyond tech."
     }
   ],
   "watchlist": [],
   "notes": [
-    "The AI sell-off deepened: chipmakers led the slide, with Nvidia down about 14%, Micron and AMD about 13% and Broadcom about 12%; the Philadelphia chip index lost nearly 11%.",
-    "Worries about AI spending and valuations, a reported SEC look at Nvidia's accounting and hawkish Fed comments weighed on stocks; Treasuries rallied, pulling the 10-year yield to about 4.93%.",
-    "It was the S&P 500's worst week in over 18 months, down about 8.6%, while the Nasdaq fell about 10%; Anthropic slid 9% to $88.30, still above its $83 IPO price."
+    "Nvidia soared about 31% after its board reinstated Jensen Huang as CEO, effective immediately; it was the main driver of the biggest one-day gains for the indexes since April 2025.",
+    "Beaten-down AI and chip names bounced hard: Micron rose about 19% on multi-year memory supply deals, CoreWeave about 22% and Dell about 20%; Zscaler climbed nearly 18% on a roughly $44 billion all-stock deal from CrowdStrike, which fell about 9%.",
+    "Strategists said much of the jump came from short covering and options hedging rather than a change in worries about inflation, rates or AI spending; oil fell and the S&P 500 won back just over half of last week's loss."
   ],
   "events": [
-    "Mon 23 Nov, 17:45 Kuwait time: flash PMI readings on US business activity.",
     "Thu 26 Nov: US markets closed for Thanksgiving; Fri 27 Nov closes early, at 21:00 Kuwait time.",
-    "Wed 9 Dec, 22:00 Kuwait time: Federal Reserve rate decision, with markets pricing a likely hike."
+    "Wed 9 Dec, 22:00 Kuwait time: Federal Reserve rate decision; markets price roughly a 90% chance of a hike."
   ],
   "sources": [
     {
-      "title": "AP via myMotherLode: How major US stock indexes fared Friday 11/20/2026",
-      "url": "https://mymotherlode.com/news/national/11327378/how-major-us-stock-indexes-fared-friday-11-20-2026.html"
+      "title": "AP via myMotherLode: How major US stock indexes fared Monday 11/23/2026",
+      "url": "https://mymotherlode.com/news/national/11334721/how-major-us-stock-indexes-fared-monday-11-23-2026.html"
     },
     {
-      "title": "AP via 94.7 QDR: S&P 500 sinks 3.7% and the Nasdaq goes negative for the year",
-      "url": "https://www.947qdr.com/2026/11/20/the-closing-bell-sp-500-sinks-3-7-and-the-nasdaq-composite-goes-negative-for-the-year/"
+      "title": "Motley Fool: Stock Market Today, Nov. 23: Markets rebound from correction on AI relief rally",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/23/stock-market-today-nov-23-markets-rebound-from-correction-on-ai-relief-rally/"
     },
     {
-      "title": "investingLive Americas wrap, 20 Nov: Nasdaq plunges 5.28%",
-      "url": "https://investinglive.com/news/investinglive-americas-fx-news-wrap-20-nov-stocks-get-hammered-as-nasdaq-plunges-5-28/"
+      "title": "Yahoo Finance: Stock market today, Monday, November 23",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-surge-after-nvidia-reinstates-jensen-huang-182039397.html"
     }
   ]
 }
