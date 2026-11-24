@@ -1,51 +1,55 @@
 {
-  "asOf": "2026-11-24T01:42:00+03:00",
-  "session": "Mon 23 Nov close",
+  "asOf": "2026-11-25T01:44:00+03:00",
+  "session": "Tue 24 Nov close",
   "indices": [
     {
       "name": "S&P 500",
-      "level": 7237.17,
-      "changePct": 4.73,
+      "level": 7201.09,
+      "changePct": -0.5,
       "symbol": "^GSPC",
-      "note": "Gained about 327 points, ending a seven-day losing streak and leaving correction territory."
+      "note": "Slipped about 36 points as tech gave back part of Monday's surge."
     },
     {
       "name": "Nasdaq",
-      "level": 24089.56,
-      "changePct": 6.51,
+      "level": 23733.54,
+      "changePct": -1.48,
       "symbol": "^IXIC",
-      "note": "Jumped about 1,472 points and is back to a gain of about 3.6% for 2026."
+      "note": "Fell about 356 points, dragged down by chip and AI stocks."
     },
     {
       "name": "Dow",
-      "level": 49595.31,
-      "changePct": 3.01,
+      "level": 50018.7,
+      "changePct": 0.85,
       "symbol": "^DJI",
-      "note": "Rose about 1,448 points as the rally spread well beyond tech."
+      "note": "Rose about 423 points and closed above 50,000 for the first time."
     }
   ],
   "watchlist": [],
   "notes": [
-    "Nvidia soared about 31% after its board reinstated Jensen Huang as CEO, effective immediately; it was the main driver of the biggest one-day gains for the indexes since April 2025.",
-    "Beaten-down AI and chip names bounced hard: Micron rose about 19% on multi-year memory supply deals, CoreWeave about 22% and Dell about 20%; Zscaler climbed nearly 18% on a roughly $44 billion all-stock deal from CrowdStrike, which fell about 9%.",
-    "Strategists said much of the jump came from short covering and options hedging rather than a change in worries about inflation, rates or AI spending; oil fell and the S&P 500 won back just over half of last week's loss."
+    "Chip stocks reversed after Monday's rally: Nvidia fell nearly 6%, Micron more than 11% after a downgrade, AMD more than 9%, and memory and storage names at least 5%.",
+    "HPE and Analog Devices each dropped about 17% despite strong revenue, on weaker margin outlooks and guidance; Anthropic closed below its $83 IPO price.",
+    "Money rotated into health care, retailers and industrials: Insmed jumped more than 14% on a roughly $41 billion Sanofi deal, Dick's and Kohl's rose about 15%, and consumer confidence came in well above forecasts."
   ],
   "events": [
-    "Thu 26 Nov: US markets closed for Thanksgiving; Fri 27 Nov closes early, at 21:00 Kuwait time.",
-    "Wed 9 Dec, 22:00 Kuwait time: Federal Reserve rate decision; markets price roughly a 90% chance of a hike."
+    "Wed 25 Nov, 16:30 Kuwait time: October PCE inflation and the second estimate of Q3 GDP; the Fed's Beige Book follows at 22:00.",
+    "Thu 26 Nov: US markets closed for Thanksgiving; Fri 27 Nov closes early, at 21:00 Kuwait time."
   ],
   "sources": [
     {
-      "title": "AP via myMotherLode: How major US stock indexes fared Monday 11/23/2026",
-      "url": "https://mymotherlode.com/news/national/11334721/how-major-us-stock-indexes-fared-monday-11-23-2026.html"
+      "title": "HNGN: Dow Tops 50,000 as Chip Stocks Slide After Nvidia Rally",
+      "url": "https://www.hngn.com/articles/273950/20261124/dow-tops-50000-chip-stocks-slide-after-nvidia-rally.htm"
     },
     {
-      "title": "Motley Fool: Stock Market Today, Nov. 23: Markets rebound from correction on AI relief rally",
-      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/23/stock-market-today-nov-23-markets-rebound-from-correction-on-ai-relief-rally/"
+      "title": "JournalArta: Dow Tops 50,000 While Chip Selloff Drags Nasdaq Down 1.48%",
+      "url": "https://journalarta.com/en/2026/11/25/stock-market-today-dow-tops-50000-while-chip-selloff-drags-nasdaq-down-1-48/"
     },
     {
-      "title": "Yahoo Finance: Stock market today, Monday, November 23",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-surge-after-nvidia-reinstates-jensen-huang-182039397.html"
+      "title": "Investrade: Market Review, November 24, 2026",
+      "url": "https://investrade.com/market-review-november-24-2026/"
+    },
+    {
+      "title": "Yahoo Finance: Stock market today, Tuesday, November 24",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-chip-stocks-nvidia-140629923.html"
     }
   ]
 }
