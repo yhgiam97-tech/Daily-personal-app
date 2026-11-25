@@ -1,55 +1,52 @@
 {
-  "asOf": "2026-11-25T01:44:00+03:00",
-  "session": "Tue 24 Nov close",
+  "asOf": "2026-11-26T01:43:00+03:00",
+  "session": "Wed 25 Nov close",
   "indices": [
     {
       "name": "S&P 500",
-      "level": 7201.09,
-      "changePct": -0.5,
+      "level": 7182.78,
+      "changePct": -0.25,
       "symbol": "^GSPC",
-      "note": "Slipped about 36 points as tech gave back part of Monday's surge."
+      "note": "Dipped about 18 points after recovering most of a steep early slide."
     },
     {
       "name": "Nasdaq",
-      "level": 23733.54,
-      "changePct": -1.48,
+      "level": 23585.8,
+      "changePct": -0.62,
       "symbol": "^IXIC",
-      "note": "Fell about 356 points, dragged down by chip and AI stocks."
+      "note": "Fell about 148 points as chip and AI stocks stayed under pressure."
     },
     {
       "name": "Dow",
-      "level": 50018.7,
-      "changePct": 0.85,
+      "level": 50182.95,
+      "changePct": 0.33,
       "symbol": "^DJI",
-      "note": "Rose about 423 points and closed above 50,000 for the first time."
+      "note": "Rose about 164 points after erasing an intraday loss of more than 1,100."
     }
   ],
   "watchlist": [],
   "notes": [
-    "Chip stocks reversed after Monday's rally: Nvidia fell nearly 6%, Micron more than 11% after a downgrade, AMD more than 9%, and memory and storage names at least 5%.",
-    "HPE and Analog Devices each dropped about 17% despite strong revenue, on weaker margin outlooks and guidance; Anthropic closed below its $83 IPO price.",
-    "Money rotated into health care, retailers and industrials: Insmed jumped more than 14% on a roughly $41 billion Sanofi deal, Dick's and Kohl's rose about 15%, and consumer confidence came in well above forecasts."
+    "October core PCE inflation came in at 3.3%, a touch above forecasts, and Q3 GDP was revised up to 4.3%; markets now price a quarter-point Fed rate hike in December.",
+    "A proposal for new 20% tariffs on China, the EU and a dozen other partners added to the early selling; they would not take effect before January.",
+    "AI and chip stocks led the drop, with Nvidia down about 4% after falling as much as 8% intraday; HP Inc. jumped about 11% on earnings while Ambarella and Nutanix fell 15–20% on weak outlooks."
   ],
   "events": [
-    "Wed 25 Nov, 16:30 Kuwait time: October PCE inflation and the second estimate of Q3 GDP; the Fed's Beige Book follows at 22:00.",
-    "Thu 26 Nov: US markets closed for Thanksgiving; Fri 27 Nov closes early, at 21:00 Kuwait time."
+    "Thu 26 Nov: US stock and bond markets closed for Thanksgiving.",
+    "Fri 27 Nov: half-day session, closing early at 21:00 Kuwait time.",
+    "Tue 8 – Wed 9 Dec: Fed policy meeting, with a rate hike widely expected."
   ],
   "sources": [
     {
-      "title": "HNGN: Dow Tops 50,000 as Chip Stocks Slide After Nvidia Rally",
-      "url": "https://www.hngn.com/articles/273950/20261124/dow-tops-50000-chip-stocks-slide-after-nvidia-rally.htm"
+      "title": "Yahoo Finance: Stock market today, Wednesday, November 25",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html"
     },
     {
-      "title": "JournalArta: Dow Tops 50,000 While Chip Selloff Drags Nasdaq Down 1.48%",
-      "url": "https://journalarta.com/en/2026/11/25/stock-market-today-dow-tops-50000-while-chip-selloff-drags-nasdaq-down-1-48/"
+      "title": "Motley Fool: Stock Market Today, Nov. 25: Dow Erases 1,100-Point Loss",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/25/stock-market-today-nov-25-dow-erases-1-100-point-loss-as-wall-street-stages-dramatic-late-day-comeback/"
     },
     {
-      "title": "Investrade: Market Review, November 24, 2026",
-      "url": "https://investrade.com/market-review-november-24-2026/"
-    },
-    {
-      "title": "Yahoo Finance: Stock market today, Tuesday, November 24",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-chip-stocks-nvidia-140629923.html"
+      "title": "Vista Partners: Stocks Close Mixed on Wednesday, November 25, 2026",
+      "url": "https://vistapglobal.com/stocks-close-mixed-on-wednesday-november-25-2026-as-hot-pce-inflation-new-tariff-plans-and-an-ai-sell-off-test-wall-street-amd-eprx-googl-modd-nvda-ser-spcx-vix/"
     }
   ]
 }
