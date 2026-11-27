@@ -1,52 +1,52 @@
 {
-  "asOf": "2026-11-26T01:43:00+03:00",
-  "session": "Wed 25 Nov close",
+  "asOf": "2026-11-28T01:42:00+03:00",
+  "session": "Fri 27 Nov close",
   "indices": [
     {
       "name": "S&P 500",
-      "level": 7182.78,
-      "changePct": -0.25,
+      "level": 7297.49,
+      "changePct": 1.6,
       "symbol": "^GSPC",
-      "note": "Dipped about 18 points after recovering most of a steep early slide."
+      "note": "Gained about 115 points in the shortened holiday session, capping its best week in over a year."
     },
     {
       "name": "Nasdaq",
-      "level": 23585.8,
-      "changePct": -0.62,
+      "level": 24129.5,
+      "changePct": 2.31,
       "symbol": "^IXIC",
-      "note": "Fell about 148 points as chip and AI stocks stayed under pressure."
+      "note": "Jumped about 544 points as chip and AI stocks bounced back."
     },
     {
       "name": "Dow",
-      "level": 50182.95,
-      "changePct": 0.33,
+      "level": 50774.94,
+      "changePct": 1.18,
       "symbol": "^DJI",
-      "note": "Rose about 164 points after erasing an intraday loss of more than 1,100."
+      "note": "Rose about 592 points to another close above 50,000."
     }
   ],
   "watchlist": [],
   "notes": [
-    "October core PCE inflation came in at 3.3%, a touch above forecasts, and Q3 GDP was revised up to 4.3%; markets now price a quarter-point Fed rate hike in December.",
-    "A proposal for new 20% tariffs on China, the EU and a dozen other partners added to the early selling; they would not take effect before January.",
-    "AI and chip stocks led the drop, with Nvidia down about 4% after falling as much as 8% intraday; HP Inc. jumped about 11% on earnings while Ambarella and Nutanix fell 15–20% on weak outlooks."
+    "Beaten-down tech and semiconductor stocks rebounded as worries about AI profitability eased; the chip index rose almost 4.7% and Micron gained about 7.6%.",
+    "Trading was light in the half-day Black Friday session, which closed at 1 p.m. ET; consumer discretionary led, helped by Amazon's roughly 4% gain on early holiday shopping data.",
+    "Vertex fell about 5% after the FDA pushed a decision on its kidney disease drug into 2027, while oil rose on fresh attacks on shipping in the Strait of Hormuz."
   ],
   "events": [
-    "Thu 26 Nov: US stock and bond markets closed for Thanksgiving.",
-    "Fri 27 Nov: half-day session, closing early at 21:00 Kuwait time.",
-    "Tue 8 – Wed 9 Dec: Fed policy meeting, with a rate hike widely expected."
+    "Sun 29 Nov: OPEC meeting.",
+    "Mon 30 Nov: US markets return to a full session, opening at 17:30 Kuwait time.",
+    "Next week: the November jobs report, with traders favouring a Fed rate hike at the 8–9 Dec meeting."
   ],
   "sources": [
     {
-      "title": "Yahoo Finance: Stock market today, Wednesday, November 25",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html"
+      "title": "Yahoo Finance: Dow, S&P 500, Nasdaq end holiday week with gains as AI stocks rebound",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-firday-november-27-dow-sp-500-nasdaq-black-friday-holiday-091152065.html"
     },
     {
-      "title": "Motley Fool: Stock Market Today, Nov. 25: Dow Erases 1,100-Point Loss",
-      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/25/stock-market-today-nov-25-dow-erases-1-100-point-loss-as-wall-street-stages-dramatic-late-day-comeback/"
+      "title": "Motley Fool: Stock Market Today, Nov. 27: S&P 500 Posts Best Week in 19 Months",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/27/stock-market-today-nov-27-s-and-p-500-posts-best-week-in-19-months-as-ai-stocks-rebound/"
     },
     {
-      "title": "Vista Partners: Stocks Close Mixed on Wednesday, November 25, 2026",
-      "url": "https://vistapglobal.com/stocks-close-mixed-on-wednesday-november-25-2026-as-hot-pce-inflation-new-tariff-plans-and-an-ai-sell-off-test-wall-street-amd-eprx-googl-modd-nvda-ser-spcx-vix/"
+      "title": "JBizNews: U.S. Stocks Close Sharply Higher in Shortened Black Friday Session",
+      "url": "https://jbiznews.com/u-s-stocks-close-sharply-higher-in-shortened-black-friday-session-and-post-big-weekly-gains-dow-jones-industrial-average-up-1-18-sp-500-up-1-60-nasdaq-composite-up-2-31/"
     }
   ]
 }
